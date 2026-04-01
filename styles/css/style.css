@@ -2167,10 +2167,12 @@ a:focus {
   content: "";
 }
 
-.portfolio_list .filter > a {
+.portfolio_list .filter > a,
+.portfolio_list .filter > button {
   display: inline-block;
   text-decoration: none;
   color: #fff;
+  border: none;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -2186,7 +2188,8 @@ a:focus {
   border-radius: 5px;
 }
 
-.portfolio_list .filter > a:after {
+.portfolio_list .filter > a:after,
+.portfolio_list .filter > button:after {
   content: "";
   position: absolute;
   width: 100px;
@@ -2200,7 +2203,8 @@ a:focus {
   opacity: 0.15;
 }
 
-.portfolio_list .filter > a:before {
+.portfolio_list .filter > a:before,
+.portfolio_list .filter > button:before {
   width: 0px;
   height: 0px;
   content: "";
@@ -2248,12 +2252,17 @@ a:focus {
 
 .portfolio_list .filter li {
   margin: 0px;
+  cursor: pointer;
 }
 
-.portfolio_list .filter ul a {
+.portfolio_list .filter ul a,
+.portfolio_list .filter ul button {
   display: block;
   text-decoration: none;
   letter-spacing: 0.5px;
+  background: transparent;
+  border: none;
+  outline: none;
   color: #fff;
   position: relative;
   font-size: 14px;
@@ -2261,18 +2270,19 @@ a:focus {
   text-transform: capitalize;
   font-weight: 500;
   font-family: "Montserrat";
+  cursor: pointer;
 }
 
-.portfolio_list .filter ul:hover a:hover {
-  opacity: 1;
+.portfolio_list .filter ul:hover li:hover {
+  opacity: 1 !important;
 }
 
-.portfolio_list .filter ul a.active {
+.portfolio_list .filter ul li.active {
   opacity: 1 !important;
   font-size: 16px;
 }
 
-.portfolio_list .filter ul:hover a {
+.portfolio_list .filter ul:hover li {
   opacity: 0.5;
 }
 
@@ -11595,7 +11605,7 @@ blockquote {
   overflow: hidden;
 }
 
-.industify_fn_share_icons label {
+.industify_fn_share_icons .icon_label {
   letter-spacing: 0px;
   line-height: 40px;
   color: #041230;

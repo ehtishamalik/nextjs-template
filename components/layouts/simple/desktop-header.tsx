@@ -89,7 +89,7 @@ export default function DesktopHeader() {
           </div>
           <div className="menu_nav">
             <ul className="industify_fn_main_nav vert_nav">
-              {/* <li className="menu-item-has-children">
+              <li className="menu-item-has-children">
                 <Link href="/">Home</Link>
                 <ul className="sub-menu">
                   <li>
@@ -105,15 +105,12 @@ export default function DesktopHeader() {
                     <Link href="/home4">Home Delta</Link>
                   </li>
                 </ul>
-              </li> */}
-              {/* <li>
-                <Link href="/portfolio">Projects</Link>
-              </li> */}
+              </li>
               <li>
-                <Link href="/gallery">Gallery</Link>
+                <Link href="/portfolio">Portfolio</Link>
               </li>
               <li className="menu-item-has-children">
-                <Link href="/services">Our Products</Link>
+                <Link href="/services">Our Services</Link>
                 <ul className="sub-menu">
                   <li>
                     <Link href="/services/kitchen-tea-towels">
@@ -164,7 +161,6 @@ export default function DesktopHeader() {
                   </li>
                 </ul>
               </li>
-
               <li className="menu-item-has-children">
                 <Link href="#">Pages</Link>
                 <ul className="sub-menu">

@@ -43,7 +43,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${rubik.variable} ${openSans.variable}`}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${rubik.variable} ${openSans.variable}`}
+    >
       <body>
         <div className="industify_fn_wrapper_all">
           <div className="industify_fn_wrapper">
