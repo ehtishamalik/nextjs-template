@@ -1,15 +1,36 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// import "swiper/css/effect-fade";
+// import "../node_modules/react-modal-video/css/modal-video.css";
+// import "metismenujs/dist/metismenujs.css";
+import "@/styles/css/base.css";
+import "@/styles/css/custom.css";
+import "@/styles/css/fontawesome-all.min.css";
+import "@/styles/css/fontello.css";
+import "@/styles/css/justified.css";
+import "@/styles/css/magnific-popup.css";
+import "@/styles/css/nice-select.css";
+import "@/styles/css/style.css";
+import "@/styles/css/swiper.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import DesktopHeader from "@/components/layouts/simple/desktop-header";
+import Footer from "@/components/layouts/simple/footer";
+import MobileHeader from "@/components/layouts/simple/mobile-header";
+import RandomService from "@/components/layouts/simple/random-service";
+
+// import CookieBanner from "../components/cookies-banner";
+
+import type { Metadata } from "next";
+import { Open_Sans, Rubik } from "next/font/google";
+
+const rubik = Rubik({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--Rubik",
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const openSans = Open_Sans({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--OpenSans",
 });
 
 export const metadata: Metadata = {
@@ -23,8 +44,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${rubik.variable} ${openSans.variable}`}>
+      <body>
+        <div className="industify_fn_wrapper_all">
+          {/* <!-- Wrapper --> */}
+          <div className="industify_fn_wrapper">
+            {/* <!-- Header --> */}
+            <DesktopHeader />
+            {/* <!-- /Header --> */}
+
+            {/* <!-- Mobile Menu --> */}
+            <MobileHeader />
+            {/* <!-- /Mobile Menu --> */}
+
+            {children}
+
+            {/* <!-- RandomService --> */}
+            <RandomService />
+            {/* <!-- /RandomService --> */}
+
+            {/* Site Footer Start */}
+            <Footer />
+            {/* Site Footer End */}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

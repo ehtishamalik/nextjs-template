@@ -4,21 +4,26 @@
 
   // Enable format on save
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
-  },
+  }
 
   // Enable Prettier for specific languages
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
 
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
 
-  // Use VSCode's built-in formatter for CSS files
-  "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  }
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // },
+
+  // "[css]": {
+  //   "editor.defaultFormatter": "biomejs.biome"
+  // }
 }
