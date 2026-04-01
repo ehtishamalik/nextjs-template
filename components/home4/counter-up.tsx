@@ -11,7 +11,7 @@ export default function CounterUp({
   time: number;
 }) {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: true, // runs only once
   });
 
   return (
