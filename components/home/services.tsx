@@ -24,26 +24,26 @@ const services = [
     bg: "https://placehold.net/800x600.png",
     title: "Kitchen Tea Towels & Jacquard Towels",
   },
-  {
-    link: "/services/bath-robes-towels",
-    bg: "https://placehold.net/800x600.png",
-    title: "Bath Towels, Robes & Terry Products",
-  },
-  {
-    link: "/services/curtains",
-    bg: "https://placehold.net/800x600.png",
-    title: "Curtains & Home Textile Solutions",
-  },
-  {
-    link: "/services/summer-beach-dress",
-    bg: "https://placehold.net/800x600.png",
-    title: "Summer Beach Dresses & Casual Wear",
-  },
-  {
-    link: "/services/terry-kitchen-towel",
-    bg: "https://placehold.net/800x600.png",
-    title: "Terry Kitchen Towels & Terry Products",
-  },
+  // {
+  //   link: "/services/bath-robes-towels",
+  //   bg: "https://placehold.net/800x600.png",
+  //   title: "Bath Towels, Robes & Terry Products",
+  // },
+  // {
+  //   link: "/services/curtains",
+  //   bg: "https://placehold.net/800x600.png",
+  //   title: "Curtains & Home Textile Solutions",
+  // },
+  // {
+  //   link: "/services/summer-beach-dress",
+  //   bg: "https://placehold.net/800x600.png",
+  //   title: "Summer Beach Dresses & Casual Wear",
+  // },
+  // {
+  //   link: "/services/terry-kitchen-towel",
+  //   bg: "https://placehold.net/800x600.png",
+  //   title: "Terry Kitchen Towels & Terry Products",
+  // },
 ];
 
 export default function HomeServices() {

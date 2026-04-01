@@ -1,6 +1,6 @@
 import "./globals.css";
-// import "swiper/css/effect-fade";
-// import "../node_modules/react-modal-video/css/modal-video.css";
+import "swiper/css/effect-fade";
+import "../node_modules/react-modal-video/css/modal-video.css";
 // import "metismenujs/dist/metismenujs.css";
 import "@/styles/css/base.css";
 import "@/styles/css/custom.css";
@@ -15,7 +15,6 @@ import "@/styles/css/swiper.css";
 import DesktopHeader from "@/components/layouts/simple/desktop-header";
 import Footer from "@/components/layouts/simple/footer";
 import MobileHeader from "@/components/layouts/simple/mobile-header";
-import RandomService from "@/components/layouts/simple/random-service";
 
 // import CookieBanner from "../components/cookies-banner";
 
@@ -47,25 +46,11 @@ export default function RootLayout({
     <html lang="en" className={`${rubik.variable} ${openSans.variable}`}>
       <body>
         <div className="industify_fn_wrapper_all">
-          {/* <!-- Wrapper --> */}
           <div className="industify_fn_wrapper">
-            {/* <!-- Header --> */}
             <DesktopHeader />
-            {/* <!-- /Header --> */}
-
-            {/* <!-- Mobile Menu --> */}
             <MobileHeader />
-            {/* <!-- /Mobile Menu --> */}
-
             {children}
-
-            {/* <!-- RandomService --> */}
-            <RandomService />
-            {/* <!-- /RandomService --> */}
-
-            {/* Site Footer Start */}
             <Footer />
-            {/* Site Footer End */}
           </div>
         </div>
       </body>

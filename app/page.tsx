@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <HomeSlider />
 
-      <HomeAbout />
-
       <HomePrinciples />
+
+      <HomeAbout />
 
       <HomeServices />
 
