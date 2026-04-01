@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import { Arrow_r } from "@/public/svg/icon";
 
-const portfolio1 = "https://placehold.net/800x600.png";
-const portfolio2 = "https://placehold.net/800x600.png";
-const portfolio3 = "https://placehold.net/800x600.png";
-const portfolio4 = "https://placehold.net/800x600.png";
+const portfolio1 = "/placeholder.png";
+const portfolio2 = "/placeholder.png";
+const portfolio3 = "/placeholder.png";
+const portfolio4 = "/placeholder.png";
 
 export default function HomeProject() {
   return (

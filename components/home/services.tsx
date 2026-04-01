@@ -6,42 +6,42 @@ import { Arrow_r } from "../../public/svg/icon";
 const services = [
   {
     link: "/services/hospital-line",
-    bg: "https://placehold.net/800x600.png",
+    bg: "/placeholder.png",
     title: "Hospital Textiles & Medical Linen",
   },
   {
     link: "/services/bed-linen",
-    bg: "https://placehold.net/800x600.png",
+    bg: "/placeholder.png",
     title: "Premium Bed Linen Collection",
   },
   {
     link: "/services/table-cover-napkins",
-    bg: "https://placehold.net/800x600.png",
+    bg: "/placeholder.png",
     title: "Table Covers, Napkins & Dining Linen",
   },
   {
     link: "/services/kitchen-tea-towels",
-    bg: "https://placehold.net/800x600.png",
+    bg: "/placeholder.png",
     title: "Kitchen Tea Towels & Jacquard Towels",
   },
   // {
   //   link: "/services/bath-robes-towels",
-  //   bg: "https://placehold.net/800x600.png",
+  //   bg: "/placeholder.png",
   //   title: "Bath Towels, Robes & Terry Products",
   // },
   // {
   //   link: "/services/curtains",
-  //   bg: "https://placehold.net/800x600.png",
+  //   bg: "/placeholder.png",
   //   title: "Curtains & Home Textile Solutions",
   // },
   // {
   //   link: "/services/summer-beach-dress",
-  //   bg: "https://placehold.net/800x600.png",
+  //   bg: "/placeholder.png",
   //   title: "Summer Beach Dresses & Casual Wear",
   // },
   // {
   //   link: "/services/terry-kitchen-towel",
-  //   bg: "https://placehold.net/800x600.png",
+  //   bg: "/placeholder.png",
   //   title: "Terry Kitchen Towels & Terry Products",
   // },
 ];

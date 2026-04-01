@@ -4,35 +4,33 @@ import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 
+const headerBG = "/placeholder.png";
+
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <div className="fn_cs_hero_header">
         <div className="container">
-          <div className="content_holder max450">
+          <div className="content_holder max800">
             <div className="title_holder">
-              <h3>
-                Know About Mission <span>Statement</span>
-              </h3>
+              <h3>A Global Leader in Automotive Seating &amp; E-Systems.</h3>
               <p>
-                We are committed to providing the highest level of
-                professionalism, service response, personalised solutions,
-                competitive prices, professional and qualified, integrated
-                design and quality workmanship.
+                Industify Corporation is ranked #07 on the Fortune 500 with
+                world-class products designed, engineered and manufactured by a
+                diverse team of talented employees. Our vision is to be
+                consistently recognized as the supplier of choice, an employer
+                of choice, the investment of choice and a company that supports
+                the communities where we do business.
               </p>
             </div>
             <div className="btn_holder fn_cs_lightgallery">
               <Link href="/services" className="discover">
-                Discover our Website
+                Discover Industify
               </Link>
               {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
-              <span
-                className="video lightbox"
-                onClick={() => setIsOpen((prev) => !prev)}
-              >
+              <span className="video lightbox" onClick={() => setIsOpen(true)}>
                 <span className="icon"></span>
                 <span className="text">Watch Video</span>
               </span>
@@ -43,16 +41,15 @@ export default function Hero() {
           <div
             className="o_img"
             style={{
-              backgroundImage: "url(/placeholder.png)",
-              backgroundRepeat: "no-repeat",
+              background: `url(${headerBG})`,
               backgroundSize: "cover",
-              backgroundPosition: "center center",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
             }}
           ></div>
           <div className="o_color"></div>
         </div>
       </div>
-
       <ModalVideo
         channel="youtube"
         // autoplay={true}
@@ -61,9 +58,6 @@ export default function Hero() {
         animationSpeed={300}
         onClose={() => setIsOpen(false)}
         // modalVideoClose="mfp-close"
-        // classNames={{
-        //   modalVideoClose: "mfp-close",
-        // }}
       />
     </>
   );

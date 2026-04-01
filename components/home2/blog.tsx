@@ -29,7 +29,7 @@ export default function Blog() {
                   <div
                     className="img_holder"
                     style={{
-                      backgroundImage: "url(https://placehold.net/800x600.png)",
+                      backgroundImage: "url(/placeholder.png)",
                     }}
                   >
                     <div className="time">
@@ -67,7 +67,7 @@ export default function Blog() {
                   <div
                     className="img_holder"
                     style={{
-                      backgroundImage: "url(https://placehold.net/800x600.png)",
+                      backgroundImage: "url(/placeholder.png)",
                     }}
                   >
                     <div className="time">
@@ -105,7 +105,7 @@ export default function Blog() {
                   <div
                     className="img_holder"
                     style={{
-                      backgroundImage: "url(https://placehold.net/800x600.png)",
+                      backgroundImage: "url(/placeholder.png)",
                     }}
                   >
                     <div className="time">

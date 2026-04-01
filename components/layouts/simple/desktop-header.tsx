@@ -12,7 +12,7 @@ import {
   Vk,
 } from "@/public/svg/social/IconSocial";
 
-const background = "https://placehold.net/800x600.png";
+const background = "/placeholder.png";
 
 export default function DesktopHeader() {
   // const [isActive, setActive] = useState(false);

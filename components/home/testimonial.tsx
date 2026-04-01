@@ -1,6 +1,6 @@
 import { Quotes } from "@/public/svg/icon";
 
-const testimonial = "https://placehold.net/800x600.png";
+const testimonial = "/placeholder.png";
 
 export default function HomeTestimonial() {
   return (

@@ -8,10 +8,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 register();
 
 // Images imported
-const slider1 = "https://placehold.net/800x600.png";
-const slider2 = "https://placehold.net/800x600.png";
-const slider3 = "https://placehold.net/800x600.png";
-const slider4 = "https://placehold.net/800x600.png";
+const slider1 = "/placeholder.png";
+const slider2 = "/placeholder.png";
+const slider3 = "/placeholder.png";
+const slider4 = "/placeholder.png";
 
 export default function HomeSlider() {
   return (

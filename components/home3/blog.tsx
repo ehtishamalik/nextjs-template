@@ -1,15 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const map = "/icons/map.png";
-const blog1 = "/placeholder.png";
-const blog2 = "/placeholder.png";
-const blog3 = "/placeholder.png";
+const blog_bg = "/icons/map.png";
+const blog_bg1 = "/placeholder.png";
+const blog_bg2 = "/placeholder.png";
+const blog_bg3 = "/placeholder.png";
 
-export default function HomeBlog() {
+export default function Blog() {
   return (
     <div className="blog_section">
-      <div className="overlay" style={{ backgroundImage: `url(${map})` }}></div>
+      <div
+        className="overlay"
+        style={{ backgroundImage: `url(${blog_bg})` }}
+      ></div>
 
       {/* <!-- Main Title --> */}
       <div className="fn_cs_main_title">
@@ -30,7 +33,7 @@ export default function HomeBlog() {
                 <div className="item">
                   <div
                     className="img_holder"
-                    style={{ backgroundImage: `url(${blog1})` }}
+                    style={{ backgroundImage: `url(${blog_bg1})` }}
                   >
                     <div className="time">
                       <span></span>
@@ -40,10 +43,10 @@ export default function HomeBlog() {
                     </div>
                     <Link href="/blog/blogSinglePage1"></Link>
                     <Image
+                      src="/thumbnails/370-250.jpg"
+                      alt="placeholder image"
                       width={370}
                       height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
                     />
                   </div>
                   <div className="title_holder">
@@ -53,7 +56,7 @@ export default function HomeBlog() {
                     </p>
                     <h3>
                       <Link href="/blog/blogSinglePage1">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Laing O’Rourke: Moves, projects and bids
                       </Link>
                     </h3>
                     <p className="t_footer">
@@ -66,7 +69,7 @@ export default function HomeBlog() {
                 <div className="item">
                   <div
                     className="img_holder"
-                    style={{ backgroundImage: `url(${blog2})` }}
+                    style={{ backgroundImage: `url(${blog_bg2})` }}
                   >
                     <div className="time">
                       <span></span>
@@ -76,10 +79,10 @@ export default function HomeBlog() {
                     </div>
                     <Link href="/blog/blogSinglePage2"></Link>
                     <Image
+                      src="/thumbnails/370-250.jpg"
+                      alt="placeholder image"
                       width={370}
                       height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
                     />
                   </div>
                   <div className="title_holder">
@@ -89,7 +92,7 @@ export default function HomeBlog() {
                     </p>
                     <h3>
                       <Link href="/blog/blogSinglePage2">
-                        Lorem ipsum dolor sit amet consectetur.
+                        How to turn Victorian gasholders apartments
                       </Link>
                     </h3>
                     <p className="t_footer">
@@ -102,7 +105,7 @@ export default function HomeBlog() {
                 <div className="item">
                   <div
                     className="img_holder"
-                    style={{ backgroundImage: `url(${blog3})` }}
+                    style={{ backgroundImage: `url(${blog_bg3})` }}
                   >
                     <div className="time">
                       <span></span>
@@ -112,10 +115,10 @@ export default function HomeBlog() {
                     </div>
                     <Link href="/blog/blogSinglePage3"></Link>
                     <Image
+                      src="/thumbnails/370-250.jpg"
+                      alt="placeholder image"
                       width={370}
                       height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
                     />
                   </div>
                   <div className="title_holder">
@@ -125,7 +128,7 @@ export default function HomeBlog() {
                     </p>
                     <h3>
                       <Link href="/blog/blogSinglePage3">
-                        Lorem ipsum dolor sit amet consectetur.
+                        CITB appoints Peter Lauener as new chairman
                       </Link>
                     </h3>
                     <p className="t_footer">

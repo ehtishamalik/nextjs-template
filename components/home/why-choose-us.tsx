@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Certificate, Checked, Stars } from "@/public/svg/icon";
 
-const rightImage = "https://placehold.net/800x600.png";
+const rightImage = "/placeholder.png";
 
 export default function HomeWhyChooseUs() {
   return (

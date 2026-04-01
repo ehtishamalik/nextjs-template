@@ -5,9 +5,10 @@ import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { PlayVideo, Stars } from "@/public/svg/icon";
 
-export default function InfoRating() {
-  const [isOpen, setIsOpen] = useState(false);
+const background1 = "/placeholder.png";
 
+export default function Info() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div className="fn_cs_info_rating">
@@ -24,16 +25,10 @@ export default function InfoRating() {
                   reflect the companys philosophy.
                 </p>
               </div>
-              {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
-              {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
-              <div
-                className="l_video fn_cs_lightgallery"
-                onClick={() => setIsOpen(true)}
-              >
-                <span
-                  className="lightbox"
-                  data-src="https://youtu.be/3j3SQEUfREs"
-                >
+              <div className="l_video fn_cs_lightgallery">
+                {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
+                {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
+                <span className="lightbox" onClick={() => setIsOpen(true)}>
                   <span className="icon">
                     <PlayVideo className="fn__svg" />
                   </span>
@@ -51,7 +46,7 @@ export default function InfoRating() {
                   <h3 className="rating_number">9.7</h3>
                   <h3 className="rating_text">Customer Rating</h3>
                 </div>
-                <div className="tagline_holder" style={{ height: "310.969px" }}>
+                <div className="tagline_holder">
                   <div className="tl_inner">
                     <span>Full reviews at trustpilot</span>
                   </div>
@@ -61,9 +56,7 @@ export default function InfoRating() {
             <div className="right_part">
               <div
                 className="o_img"
-                style={{
-                  backgroundImage: "url(/placeholder.png)",
-                }}
+                style={{ backgroundImage: `url(${background1})` }}
               ></div>
               <div className="o_color"></div>
             </div>
