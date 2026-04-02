@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Breadcumb from "@/components/layouts/simple/breadcumb";
+import Breadcumb from "@/components/layout/breadcumb";
 
 import { Location } from "@/public/svg/icon";
 

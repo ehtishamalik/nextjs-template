@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Sidebar from "@/components/layouts/simple/sidebar";
+import Sidebar from "@/components/layout/sidebar";
 import { Check } from "@/public/svg/icon";
 
 export default function Portfolio2() {

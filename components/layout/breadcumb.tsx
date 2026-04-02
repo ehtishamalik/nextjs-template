@@ -7,10 +7,7 @@ interface BreadcumbProps {
     name: string;
     href: string;
   };
-  SecondChild?: {
-    name: string;
-    href: string;
-  };
+  SecondChild?: string;
 }
 
 export default function Breadcumb({ firstChild, SecondChild }: BreadcumbProps) {
@@ -18,7 +15,7 @@ export default function Breadcumb({ firstChild, SecondChild }: BreadcumbProps) {
     <div className="industify_fn_pagetitle">
       <div className="container">
         <div className="title_holder">
-          <h3>{SecondChild ? SecondChild.name : firstChild.name}</h3>
+          <h3>{SecondChild ? SecondChild : firstChild.name}</h3>
           <div className="industify_fn_breadcrumbs">
             <ul>
               <li>
@@ -40,7 +37,7 @@ export default function Breadcumb({ firstChild, SecondChild }: BreadcumbProps) {
                     <span></span>
                   </li>
                   <li>
-                    <span className="bread-current">{SecondChild.name}</span>
+                    <span className="bread-current">{SecondChild}</span>
                   </li>
                 </>
               ) : (

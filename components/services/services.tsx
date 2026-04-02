@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Sidebar from "@/components/layouts/simple/sidebar";
+import Sidebar from "@/components/layout/sidebar";
 
 export default function Services() {
   return (

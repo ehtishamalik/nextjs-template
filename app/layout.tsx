@@ -12,9 +12,9 @@ import "@/styles/css/nice-select.css";
 import "@/styles/css/style.css";
 import "@/styles/css/swiper.css";
 
-import DesktopHeader from "@/components/layouts/simple/desktop-header";
-import Footer from "@/components/layouts/simple/footer";
-import MobileHeader from "@/components/layouts/simple/mobile-header";
+import DesktopHeader from "@/components/layout/desktop-header";
+import Footer from "@/components/layout/footer";
+import MobileHeader from "@/components/layout/mobile-header";
 
 // import CookieBanner from "../components/cookies-banner";
 

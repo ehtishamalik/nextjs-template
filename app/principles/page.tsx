@@ -1,4 +1,4 @@
-import Breadcumb from "@/components/layouts/simple/breadcumb";
+import Breadcumb from "@/components/layout/breadcumb";
 
 export default function Principles() {
   return (

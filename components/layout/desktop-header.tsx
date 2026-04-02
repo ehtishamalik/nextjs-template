@@ -110,51 +110,7 @@ export default function DesktopHeader() {
                 <Link href="/services">Our Services</Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link href="/services/kitchen-tea-towels">
-                      Kitchen Tea Towels
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/jacquard-kitchen-tea-towel">
-                      Jacquard Kitchen Tea Towel
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/bed-linen">Bed Linen</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/hospital-line">Hospital Line</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/table-cover-napkins">
-                      Table Cover &amp; Napkins
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/terry-kitchen-towel">
-                      Terry Kitchen Towel
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/curtains">Curtains</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/summer-beach-dress">
-                      Summer Beach Dress
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/services/bath-robes-towels">
-                      Bath Robes &amp; Towels
-                    </Link>
+                    <Link href="/services/single">Single Service</Link>
                   </li>
                 </ul>
               </li>
