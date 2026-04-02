@@ -30,7 +30,7 @@ export default function Breadcumb({ firstChild, SecondChild }: BreadcumbProps) {
                 <span></span>
               </li>
               <li>
-                <Link href={`/${firstChild.href}`} title={firstChild.name}>
+                <Link href={`${firstChild.href}`} title={firstChild.name}>
                   {firstChild.name}
                 </Link>
               </li>
