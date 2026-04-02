@@ -7,7 +7,6 @@ import HomeServices from "@/components/home/services";
 import HomeSlider from "@/components/home/slider";
 import HomeTestimonial from "@/components/home/testimonial";
 import HomeWhyChooseUs from "@/components/home/why-choose-us";
-// import Gallery from "@/components/Gallery/Gallery";
 
 export default function Home() {
   return (

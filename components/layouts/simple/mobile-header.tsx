@@ -183,9 +183,6 @@ export default function MobileHeader() {
                 </ul>
               </li>
               <li>
-                <Link href="/portfolio">Projects</Link>
-              </li>
-              <li>
                 <Link
                   href="#"
                   className={`has-arrow ${
@@ -193,7 +190,7 @@ export default function MobileHeader() {
                   } `}
                   onClick={() => handleToggle(2)}
                 >
-                  Our Products
+                  Our Services
                 </Link>
 
                 <ul
@@ -251,18 +248,39 @@ export default function MobileHeader() {
                 </ul>
               </li>
 
-              {/* <li>
-                  <Link href="#" onClick={() => handleToggle(3)} className={`has-arrow ${isActive.key == 3 ? "mm-active" : ""} `}>Pages</Link>
-                  <ul style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                      <li><Link href="/gallery">Gallery</Link></li>
-                      <li><Link href="/404">404 Page</Link></li >
-                      <li><Link href="/principles">Our Principles</Link></li >
-                      <li><Link href="/services">Our Services</Link></li >
-                      <li><Link href="/blog-full">Blog Full</Link></li >
-                      <li><Link href="/protected">Protected Page</Link></li >
-                  </ul >
-                </li > */}
-              {/* <li><Link href="/blog">Blog</Link></li > */}
+              <li>
+                <Link
+                  href="#"
+                  onClick={() => handleToggle(3)}
+                  className={`has-arrow ${isActive.key === 3 ? "mm-active" : ""} `}
+                >
+                  Pages
+                </Link>
+                <ul
+                  style={{
+                    display: `${isActive.key === 3 ? "block" : "none"}`,
+                  }}
+                >
+                  <li>
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
+                  <li>
+                    <Link href="/404">404 Page</Link>
+                  </li>
+                  <li>
+                    <Link href="/principles">Our Principles</Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/full">Blog Full</Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link href="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
               <li>
                 <Link href="/contact">Contact</Link>
               </li>

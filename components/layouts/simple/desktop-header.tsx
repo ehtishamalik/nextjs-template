@@ -106,9 +106,6 @@ export default function DesktopHeader() {
                   </li>
                 </ul>
               </li>
-              <li>
-                <Link href="/portfolio">Portfolio</Link>
-              </li>
               <li className="menu-item-has-children">
                 <Link href="/services">Our Services</Link>
                 <ul className="sub-menu">
@@ -174,20 +171,16 @@ export default function DesktopHeader() {
                     <Link href="/principles">Our Principles</Link>
                   </li>
                   <li>
-                    <Link href="/services">Our Services</Link>
-                  </li>
-                  <li>
-                    <Link href="blog/blogFullPage">Blog Full</Link>
-                  </li>
-                  <li>
-                    <Link href="/protected">Protected Page</Link>
+                    <Link href="/blog/full">Blog Full</Link>
                   </li>
                 </ul>
               </li>
               <li>
+                <Link href="/portfolio">Portfolio</Link>
+              </li>
+              <li>
                 <Link href="/blog">Blog</Link>
               </li>
-
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
