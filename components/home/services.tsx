@@ -70,10 +70,9 @@ export default function HomeServices() {
               <div className="item" key={item.title}>
                 <Link href={item.link} className="full_link"></Link>
                 <div className="img_holder">
-                  {/* <img src="/thumbnails/480-700.jpg" alt="image holder" /> */}
                   <Image
-                    width={437}
-                    height={492}
+                    width={337}
+                    height={556}
                     src="/thumbnails/480-700.jpg"
                     alt="placeholder"
                   />

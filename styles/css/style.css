@@ -3449,7 +3449,7 @@ blockquote {
   margin: 0 30px 30px 0;
 }
 
-.industify_fn_tags label {
+.industify_fn_tags .tag {
   float: left;
   line-height: 1;
   padding: 12px 0px;

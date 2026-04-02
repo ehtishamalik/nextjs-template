@@ -39,7 +39,7 @@ export default function HomeProject() {
                     <Image
                       width={435}
                       height={340}
-                      src="/img/thumb/700-500.jpg"
+                      src="/thumbnails/700-500.jpg"
                       alt="placeholder"
                     />
                     <div
@@ -76,7 +76,7 @@ export default function HomeProject() {
                     <Image
                       width={435}
                       height={340}
-                      src="/img/thumb/700-500.jpg"
+                      src="/thumbnails/700-500.jpg"
                       alt="placeholder"
                     />
                     <div
@@ -113,7 +113,7 @@ export default function HomeProject() {
                     <Image
                       width={435}
                       height={340}
-                      src="/img/thumb/700-500.jpg"
+                      src="/thumbnails/700-500.jpg"
                       alt="placeholder"
                     />
                     <div
@@ -150,7 +150,7 @@ export default function HomeProject() {
                     <Image
                       width={435}
                       height={340}
-                      src="/img/thumb/700-500.jpg"
+                      src="/thumbnails/700-500.jpg"
                       alt="placeholder"
                     />
                     <div
