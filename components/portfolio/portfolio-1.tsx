@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-export default function Portfolio1() {
+export default function PortfolioBackend() {
   return (
     <div className="industify_fn_portfolio_single">
       {/* Justified Images */}
-      <div className="fn_cs_justified_wrap">{/* <PhotoGallery /> */}</div>
+      <div className="fn_cs_justified_wrap">
+        {/* <PhotoGallery /> Placeholder for backend screenshots, dashboards, API diagrams */}
+      </div>
       {/* /Justified Images */}
 
       {/* Portfolio Content */}
@@ -12,61 +14,60 @@ export default function Portfolio1() {
         <div className="container">
           <div className="content_in">
             <div className="content_part">
-              <h3>Industify Gas and Oil Organization</h3>
+              <h3>Enterprise Backend & API Solutions</h3>
 
               <p>
-                We go beyond testing, inspecting and certifying products; we are
-                a Total Quality Assurance provider to industries worldwide.
-                Through our global network of state-of-the-art facilities and
-                industry-leading technical expertise we provide innovative and
-                bespoke Assurance, Testing, Inspection and Certification
-                services to customers.
+                We design scalable and secure backend architectures tailored to
+                enterprise needs. From RESTful APIs to microservices, our
+                solutions ensure high performance, reliability, and seamless
+                integration across web, mobile, and third-party systems. Every
+                component is built with best practices to handle heavy traffic
+                and maintain data integrity.
               </p>
 
               <p>
-                We provide a systemic approach to supporting our customers’
-                Quality Assurance efforts in each of the areas of their
-                operations including R&amp;D, raw materials sourcing, components
-                suppliers, manufacturing, transportation, distribution and
-                retail channels, and consumer management.
+                Our approach emphasizes modular design, robust database
+                management, and API-first strategies, enabling rapid iteration
+                and easy expansion of functionalities. Security is integrated at
+                every layer, from authentication and authorization to data
+                encryption and secure API endpoints.
               </p>
 
               <p>
-                Matao is an industry leader with more than 43,000 employees in
-                1,000 locations in over 100 countries. We deliver Total Quality
-                Assurance expertise 24 hours a day, 7 days a week with our
-                industry-winning processes and customer-centric culture.
+                We partner with clients to optimize system workflows, streamline
+                operations, and reduce technical debt. Our team leverages cloud
+                platforms, containerization, and CI/CD pipelines to ensure
+                continuous delivery and operational efficiency.
               </p>
 
               <p>
-                Whether your business is local or global, we can help to ensure
-                that your products meet quality, health, environmental, safety,
-                and social accountability standards for virtually any market
-                around the world. We hold extensive global accreditations,
-                recognitions, and agreements, and our knowledge of and expertise
-                in overcoming regulatory, market, and supply chain hurdles is
-                unrivalled.
+                With extensive experience in high-demand industries, we
+                implement solutions that support mission-critical applications,
+                real-time processing, and multi-region deployments. Our backends
+                are monitored, optimized, and maintained for uninterrupted
+                service.
               </p>
 
               <h4>
-                Heavy equipment and industrial machines are more complex than
-                ever. In an increasingly competitive market, companies must
-                ensure innovation and manage complexity
+                Modern backend systems require scalable architecture, robust
+                APIs, and resilient integrations to meet growing business
+                demands.
               </h4>
 
               <p>
-                The 433-metre structure has a 126-metre central span that lifts
-                to a height of 53 metres in just 11 minutes to allow ships to
-                enter. The bridge showcases VINCI Construction’s wide-ranging
-                expertise in foundations, mechanical engineering, marine works
-                and civil engineering.
+                Our flagship project involved building a multi-tier backend for
+                a global e-commerce platform, handling millions of requests per
+                day, integrating secure payment gateways, and providing
+                analytics dashboards for business insights. The system was
+                containerized and deployed on cloud infrastructure for maximum
+                scalability and uptime.
               </p>
 
               <blockquote>
-                To connect the historic centre of Bordeaux on the left bank of
-                the river with the business and residential neighbourhoods on
-                the right bank without preventing cruise ships from reaching the
-                Port de la Lune dock, the city opted to build a lift bridge.
+                “Reliable and scalable backend systems are the backbone of any
+                digital platform. Our mission is to make every backend fast,
+                secure, and maintainable, enabling businesses to grow without
+                limitations.”
               </blockquote>
 
               <div className="share_box">
@@ -75,7 +76,7 @@ export default function Portfolio1() {
                   <ul>
                     <li>
                       <Link
-                        href="http://www.facebook.com/sharer.php?u=https://frenify.net/envato/frenify/html/industify/1/portfolioSinglePage1"
+                        href="http://www.facebook.com/sharer.php?u=#"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -84,7 +85,7 @@ export default function Portfolio1() {
                     </li>
                     <li>
                       <Link
-                        href="https://twitter.com/share?url=https://frenify.net/envato/frenify/html/industify/1/portfolioSinglePage1"
+                        href="https://twitter.com/share?url=#"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -93,7 +94,7 @@ export default function Portfolio1() {
                     </li>
                     <li>
                       <Link
-                        href="https://plus.google.com/share?url=https://frenify.net/envato/frenify/html/industify/1/portfolioSinglePage1"
+                        href="https://plus.google.com/share?url=#"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -102,7 +103,7 @@ export default function Portfolio1() {
                     </li>
                     <li>
                       <Link
-                        href="http://pinterest.com/pin/create/button/?url=https://frenify.net/envato/frenify/html/industify/1/portfolioSinglePage1&amp;"
+                        href="http://pinterest.com/pin/create/button/?url=#"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -111,7 +112,7 @@ export default function Portfolio1() {
                     </li>
                     <li>
                       <Link
-                        href="https://www.vk.com/sharer.php?url=https://frenify.net/envato/frenify/html/industify/1/portfolioSinglePage1"
+                        href="https://www.vk.com/sharer.php?url=#"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -128,31 +129,31 @@ export default function Portfolio1() {
                 <ul>
                   <li>
                     <p>Category</p>
-                    <span>Gas and Oil</span>
+                    <span>Backend & API</span>
                   </li>
                   <li>
-                    <p>Value</p>
-                    <span>$2,900,000,000</span>
+                    <p>Project Value</p>
+                    <span>$1,200,000</span>
                   </li>
                   <li>
                     <p>Client</p>
-                    <span>Servitas</span>
+                    <span>Tech Solutions Inc.</span>
                   </li>
                   <li>
-                    <p>Architect</p>
-                    <span>PGAL Architects</span>
+                    <p>Lead Developer</p>
+                    <span>Jane Doe</span>
                   </li>
                   <li>
                     <p>Location</p>
-                    <span>Design Builder</span>
+                    <span>Remote / Global</span>
                   </li>
                   <li>
                     <p>Completion Date</p>
-                    <span>August 2017</span>
+                    <span>March 2026</span>
                   </li>
                   <li>
-                    <p>Square Footage</p>
-                    <span>2,200,000</span>
+                    <p>Users Supported</p>
+                    <span>2,000,000+</span>
                   </li>
                 </ul>
               </div>

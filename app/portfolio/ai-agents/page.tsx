@@ -1,5 +1,5 @@
 import Breadcumb from "@/components/layout/breadcumb";
-import Portfolio1 from "@/components/portfolio/portfolio-1";
+import Portfolio from "@/components/portfolio/portfolio-2";
 
 export default async function Portfolios1() {
   return (
@@ -9,9 +9,9 @@ export default async function Portfolios1() {
           name: "Portfolio",
           href: "/portfolio",
         }}
-        SecondChild="Type 1"
+        SecondChild="AI & Intelligent Agents"
       />
-      <Portfolio1 />
+      <Portfolio />
     </>
   );
 }

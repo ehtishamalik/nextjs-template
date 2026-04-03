@@ -4,63 +4,12 @@ import Isotope from "isotope-layout";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { portfolio } from "@/constants";
 import { Arrow_r } from "@/public/svg/icon";
 
 // ✅ Define project type
-type Project = {
-  id: number;
-  category: string;
-  img: string;
-  title: string;
-  link: string;
-};
 
 export default function PortfolioList() {
-  const projects: Project[] = [
-    {
-      id: 1,
-      category: "one",
-      img: "/placeholder.png",
-      title: "Industify Gas and Oil Organization",
-      link: "/portfolio/type-1",
-    },
-    {
-      id: 2,
-      category: "two",
-      img: "/placeholder.png",
-      title: "Odeon Industrial Machinery",
-      link: "/portfolio/type-2",
-    },
-    {
-      id: 3,
-      category: "three",
-      img: "/placeholder.png",
-      title: "Industify Gas and Oil Organization",
-      link: "/portfolio/type-1",
-    },
-    {
-      id: 4,
-      category: "two",
-      img: "/placeholder.png",
-      title: "Odeon Industrial Machinery",
-      link: "/portfolio/type-2",
-    },
-    {
-      id: 5,
-      category: "two",
-      img: "/placeholder.png",
-      title: "Industify Gas and Oil Organization",
-      link: "/portfolio/type-1",
-    },
-    {
-      id: 6,
-      category: "one",
-      img: "/placeholder.png",
-      title: "Odeon Industrial Machinery",
-      link: "/portfolio/type-2",
-    },
-  ];
-
   const [isDropdown, setIsDropdown] = useState<boolean>(false);
   const [filterKey, setFilterKey] = useState<string>("");
 
@@ -130,9 +79,10 @@ export default function PortfolioList() {
               </li>
 
               {[
-                { key: "one", label: "Aerospace" },
-                { key: "two", label: "Car Industry" },
-                { key: "three", label: "Construction" },
+                { key: "web", label: "Web Development" },
+                { key: "backend", label: "Backend Development" },
+                { key: "ai", label: "AI & Machine Learning" },
+                { key: "mobile", label: "Mobile Development" },
               ].map((item) => (
                 <li key={item.key}>
                   <button
@@ -149,7 +99,7 @@ export default function PortfolioList() {
 
           <div className="list_in">
             <ul className="industify_fn_portfolio_list">
-              {projects.map((project) => (
+              {portfolio.map((project) => (
                 <li
                   className={`gas_and_oil ${project.category}`}
                   key={project.id}

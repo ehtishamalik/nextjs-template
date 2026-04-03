@@ -1,9 +1,6 @@
-export const services: {
-  title: string;
-  description: string;
-  link: string;
-  bg: string;
-}[] = [
+import type { BlogSmall, Portfolio, Service } from "@/types";
+
+export const services: Service[] = [
   {
     title: "Web & Frontend Development",
     description:
@@ -34,17 +31,7 @@ export const services: {
   },
 ];
 
-export const blogs: {
-  day: string;
-  month: string;
-  year: string;
-  author: string;
-  country: string;
-  title: string;
-  link: string;
-  image: string;
-  description: string;
-}[] = [
+export const blogs: BlogSmall[] = [
   {
     day: "28",
     month: "Aug",
@@ -80,5 +67,99 @@ export const blogs: {
     image: "/placeholder.png",
     description:
       "Creating high-quality mobile applications requires careful planning, design, and execution. This blog highlights best practices for mobile development, including building responsive UIs, optimizing performance, and ensuring smooth cross-platform compatibility. We delve into techniques for backend integration, offline capabilities, and security measures to safeguard user data. Following these guidelines helps developers deliver robust and engaging mobile experiences that delight users and drive business growth.",
+  },
+];
+
+export const portfolio: Portfolio[] = [
+  // Web & Frontend
+  {
+    id: 1,
+    category: "web",
+    img: "/placeholder.png",
+    title: "Corporate Web App Redesign",
+    link: "/portfolio/backend-api",
+  },
+  {
+    id: 2,
+    category: "web",
+    img: "/placeholder.png",
+    title: "E-Commerce Platform Frontend",
+    link: "/portfolio/backend-api",
+  },
+  {
+    id: 3,
+    category: "web",
+    img: "/placeholder.png",
+    title: "Progressive Web App Development",
+    link: "/portfolio/backend-api",
+  },
+
+  // Backend & API
+  {
+    id: 4,
+    category: "backend",
+    img: "/placeholder.png",
+    title: "Enterprise API Integration",
+    link: "/portfolio/backend-api",
+  },
+  {
+    id: 5,
+    category: "backend",
+    img: "/placeholder.png",
+    title: "Scalable Microservices Architecture",
+    link: "/portfolio/backend-api",
+  },
+  {
+    id: 6,
+    category: "backend",
+    img: "/placeholder.png",
+    title: "Secure Payment Gateway Backend",
+    link: "/portfolio/backend-api",
+  },
+
+  // AI & Intelligent Agents
+  {
+    id: 7,
+    category: "ai",
+    img: "/placeholder.png",
+    title: "AI Chatbot for Customer Support",
+    link: "/portfolio/ai-agents",
+  },
+  {
+    id: 8,
+    category: "ai",
+    img: "/placeholder.png",
+    title: "Predictive Analytics Dashboard",
+    link: "/portfolio/ai-agents",
+  },
+  {
+    id: 9,
+    category: "ai",
+    img: "/placeholder.png",
+    title: "Intelligent Recommendation Engine",
+    link: "/portfolio/ai-agents",
+  },
+
+  // Mobile App Development
+  {
+    id: 10,
+    category: "mobile",
+    img: "/placeholder.png",
+    title: "Cross-Platform Mobile App",
+    link: "/portfolio/ai-agents",
+  },
+  {
+    id: 11,
+    category: "mobile",
+    img: "/placeholder.png",
+    title: "Real-Time Mobile Messaging App",
+    link: "/portfolio/ai-agents",
+  },
+  {
+    id: 12,
+    category: "mobile",
+    img: "/placeholder.png",
+    title: "Fitness & Health Tracker App",
+    link: "/portfolio/ai-agents",
   },
 ];
