@@ -2,9 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { Arrow_r } from "@/public/svg/icon";
 
-const portfolio_bg1 = "/placeholder.png";
-const portfolio_bg2 = "/placeholder.png";
-const portfolio_bg3 = "/placeholder.png";
+const portfolio: {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+}[] = [
+  {
+    title: "E-Commerce Platform Redesign",
+    description:
+      "Full-stack development with seamless UX, high performance, and secure payment integration.",
+    link: "/portfolio/project1",
+    image: "/placeholder.png",
+  },
+  {
+    title: "AI-Powered Analytics Tool",
+    description:
+      "Intelligent dashboards and predictive insights to drive smarter business decisions.",
+    link: "/portfolio/project2",
+    image: "/placeholder.png",
+  },
+  {
+    title: "Enterprise Mobile App",
+    description:
+      "Cross-platform app delivering robust features and intuitive user experience.",
+    link: "/portfolio/project3",
+    image: "/placeholder.png",
+  },
+];
 
 export default function Projects() {
   return (
@@ -14,122 +39,54 @@ export default function Projects() {
           <div className="left_part">
             <div className="fn_cs_sticky_section">
               <div className="left_part_in">
-                <h3>Our latest Projects</h3>
+                <h3>Our Recent Backend & API Projects</h3>
                 <p>
-                  It&apos;s a burning, never-ending desire to help our clients
-                  maximize their outcomes and exceed their strategic goals.
-                  Though our goal is a bit aspirational, our values are what
-                  drive us every day.{" "}
+                  We build high-performance backend systems and APIs that power
+                  modern applications across industries. From scalable cloud
+                  architectures to secure integrations, each project reflects
+                  our commitment to reliability, efficiency, and innovation.
                 </p>
-                <Link href="/portfolio">All Projects</Link>
+                <Link href="/portfolio">View All Projects</Link>
               </div>
             </div>
           </div>
           <div className="right_part">
             <div className="fn_cs_sticky_section">
               <ul>
-                <li>
-                  <div className="item">
-                    <div className="img_holder">
-                      <Image
-                        src="/thumbnails/560-375.jpg"
-                        alt="placeholder image"
-                        width={560}
-                        height={375}
-                      />
-                      <div
-                        className="abs_img"
-                        style={{ backgroundImage: `url(${portfolio_bg1})` }}
-                      >
-                        <Link href="/portfolio/portfolioSinglePage1"></Link>
+                {portfolio.map((item, index) => (
+                  <li key={index}>
+                    <div className="item">
+                      <div className="img_holder">
+                        <Image
+                          src="/thumbnails/560-375.jpg"
+                          alt="placeholder image"
+                          width={560}
+                          height={375}
+                        />
+                        <div
+                          className="abs_img"
+                          style={{ backgroundImage: `url(${item.image})` }}
+                        >
+                          <Link href={item.link}></Link>
+                        </div>
+                      </div>
+                      <div className="title_holder">
+                        <h3>
+                          <Link href={item.link}>{item.title}</Link>
+                        </h3>
+                        <p>
+                          <Link href={item.link}>
+                            <span className="text">View More</span>
+                            <span className="arrow">
+                              <Arrow_r className="fn__svg" />
+                            </span>
+                          </Link>
+                        </p>
+                        <Link href={item.link}></Link>
                       </div>
                     </div>
-                    <div className="title_holder">
-                      <h3>
-                        <Link href="/portfolio/portfolioSinglePage1">
-                          Industify Gas and Oil Organization
-                        </Link>
-                      </h3>
-                      <p>
-                        <Link href="/portfolio/portfolioSinglePage1">
-                          <span className="text">View More</span>
-                          <span className="arrow">
-                            <Arrow_r className="fn__svg" />
-                          </span>
-                        </Link>
-                      </p>
-                      <Link href="/portfolio/portfolioSinglePage1"></Link>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="item">
-                    <div className="img_holder">
-                      <Image
-                        src="/thumbnails/560-375.jpg"
-                        alt="placeholder image"
-                        width={560}
-                        height={375}
-                      />
-                      <div
-                        className="abs_img"
-                        style={{ backgroundImage: `url(${portfolio_bg2})` }}
-                      >
-                        <Link href="/portfolio/portfolioSinglePage2"></Link>
-                      </div>
-                    </div>
-                    <div className="title_holder">
-                      <h3>
-                        <Link href="/portfolio/portfolioSinglePage2">
-                          Chaban Car Industry
-                        </Link>
-                      </h3>
-                      <p>
-                        <Link href="/portfolio/portfolioSinglePage2">
-                          <span className="text">View More</span>
-                          <span className="arrow">
-                            <Arrow_r className="fn__svg" />
-                          </span>
-                        </Link>
-                      </p>
-                      <Link href="/portfolio/portfolioSinglePage2"></Link>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="item">
-                    <div className="img_holder">
-                      <Image
-                        src="/thumbnails/560-375.jpg"
-                        alt="placeholder image"
-                        width={560}
-                        height={375}
-                      />
-                      <div
-                        className="abs_img"
-                        style={{ backgroundImage: `url(${portfolio_bg3})` }}
-                      >
-                        <Link href="/portfolio/portfolioSinglePage3"></Link>
-                      </div>
-                    </div>
-                    <div className="title_holder">
-                      <h3>
-                        <Link href="/portfolio/portfolioSinglePage3">
-                          Industify Gas and Oil Organization
-                        </Link>
-                      </h3>
-                      <p>
-                        <Link href="/portfolio/portfolioSinglePage3">
-                          <span className="text">View More</span>
-                          <span className="arrow">
-                            <Arrow_r className="fn__svg" />
-                          </span>
-                        </Link>
-                      </p>
-                      <Link href="/portfolio/portfolioSinglePage3"></Link>
-                    </div>
-                  </div>
-                </li>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

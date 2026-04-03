@@ -1,4 +1,3 @@
-import Blog from "@/components/home3/blog";
 import Hero from "@/components/home3/hero";
 import Info from "@/components/home3/info";
 import Introduce from "@/components/home3/introduce";
@@ -7,6 +6,7 @@ import Projects from "@/components/home3/projects";
 import Services from "@/components/home3/services";
 import Slider from "@/components/home3/slider";
 import Testimonial from "@/components/home3/testimonials";
+import Blog from "@/components/layout/blog";
 
 export default function Home() {
   return (

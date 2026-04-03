@@ -4,19 +4,19 @@ export default function Principles() {
       <div className="container">
         <div className="inner">
           <div className="left_part">
-            <h3>Our Guiding Principles</h3>
+            <h3>Our Guiding Principles in Software Development</h3>
             <p>
-              For over 35 years, the Industify family has been building
-              relationships and projects that last. As a diversified
-              construction management, design-build, and general contracting
-              firm, Industify is recognized as one of Upstate New York&apos;s
-              largest construction companies.
+              For over now over half a decade, we’ve been building backend
+              systems and APIs that are reliable, scalable, and secure. Our team
+              combines deep technical expertise with a commitment to best
+              practices, delivering software solutions that stand the test of
+              time.
             </p>
             <p>
-              Serving an impressive list of long-term clients, we are an
-              organization of seasoned professionals with a tremendous breadth
-              of construction experience and expertise across multiple
-              industries.
+              Serving a wide range of clients across industries, we focus on
+              creating robust architectures, seamless integrations, and
+              maintainable code that empowers businesses to scale with
+              confidence.
             </p>
           </div>
           <div className="right_part">
@@ -26,9 +26,9 @@ export default function Principles() {
                   <div className="title_holder">
                     <h3>Humility</h3>
                     <p>
-                      Be humble in all dealings with our partners, clients and
-                      team members. True wisdom and understanding belong to the
-                      humble.
+                      Value collaboration and listen to client needs. Great
+                      software comes from understanding real-world challenges
+                      and being open to learning.
                     </p>
                   </div>
                   <div className="number_holder">01</div>
@@ -39,8 +39,8 @@ export default function Principles() {
                   <div className="title_holder">
                     <h3>Honesty</h3>
                     <p>
-                      Be sure of our facts and be honest and straightforward in
-                      all of our dealings with each other and our clients.
+                      Transparent communication in development, reporting, and
+                      project timelines ensures trust and predictable outcomes.
                     </p>
                   </div>
                   <div className="number_holder">02</div>
@@ -51,9 +51,8 @@ export default function Principles() {
                   <div className="title_holder">
                     <h3>Passion</h3>
                     <p>
-                      Success is when we can achieve results in the things we
-                      are passionate about and feel as though we are making a
-                      difference.
+                      We thrive on solving complex backend problems, optimizing
+                      APIs, and creating software that makes a tangible impact.
                     </p>
                   </div>
                   <div className="number_holder">03</div>
@@ -64,9 +63,9 @@ export default function Principles() {
                   <div className="title_holder">
                     <h3>Quality Work</h3>
                     <p>
-                      We ensure that all projects are done with utmost
-                      professionalism using quality materials while offering
-                      clients the support and accessibility.
+                      Every line of code is crafted for reliability,
+                      performance, and maintainability, ensuring long-term
+                      success for our clients.
                     </p>
                   </div>
                   <div className="number_holder">04</div>

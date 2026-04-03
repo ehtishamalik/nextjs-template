@@ -14,19 +14,19 @@ export default function Hero() {
         <div className="container">
           <div className="content_holder max800">
             <div className="title_holder">
-              <h3>A Global Leader in Automotive Seating &amp; E-Systems.</h3>
+              <h3>Powering Businesses with Robust Backend Solutions.</h3>
               <p>
-                Industify Corporation is ranked #07 on the Fortune 500 with
-                world-class products designed, engineered and manufactured by a
-                diverse team of talented employees. Our vision is to be
-                consistently recognized as the supplier of choice, an employer
-                of choice, the investment of choice and a company that supports
-                the communities where we do business.
+                We specialize in building high-performance backend systems and
+                scalable APIs that drive modern applications. From secure cloud
+                architectures to seamless integrations, our team ensures your
+                software infrastructure is reliable, efficient, and ready for
+                growth. Let us handle the complexity behind the scenes so your
+                applications run flawlessly.
               </p>
             </div>
             <div className="btn_holder fn_cs_lightgallery">
               <Link href="/services" className="discover">
-                Discover Industify
+                Discover Our Services
               </Link>
               {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
@@ -52,12 +52,10 @@ export default function Hero() {
       </div>
       <ModalVideo
         channel="youtube"
-        // autoplay={true}
         isOpen={isOpen}
         videoId="3j3SQEUfREs"
         animationSpeed={300}
         onClose={() => setIsOpen(false)}
-        // modalVideoClose="mfp-close"
       />
     </>
   );

@@ -17,12 +17,15 @@ export default function Info() {
             <div className="left_part">
               <div className="title_holder">
                 <h3 className="l_title">
-                  World&apos;s Leading Industry Corporation
+                  Experts in Scalable Backend & API Solutions
                 </h3>
                 <p className="l_desc">
-                  To further develop our corporate strengths we have established
-                  a corporate mandate to maintain strong core values that truly
-                  reflect the companys philosophy.
+                  We design and build high-performance backend systems and APIs
+                  that power modern applications. From cloud-native
+                  architectures to seamless integrations, our solutions are
+                  secure, scalable, and engineered for efficiency. Our mission
+                  is to simplify complex software challenges and deliver robust
+                  infrastructure that businesses can rely on.
                 </p>
               </div>
               <div className="l_video fn_cs_lightgallery">
@@ -32,7 +35,9 @@ export default function Info() {
                   <span className="icon">
                     <PlayVideo className="fn__svg" />
                   </span>
-                  <span className="text">View Company Promo Video</span>
+                  <span className="text">
+                    Watch Our Backend Solutions in Action
+                  </span>
                 </span>
               </div>
             </div>
@@ -48,7 +53,7 @@ export default function Info() {
                 </div>
                 <div className="tagline_holder">
                   <div className="tl_inner">
-                    <span>Full reviews at trustpilot</span>
+                    <span>Full Reviews At Trustpilot</span>
                   </div>
                 </div>
               </div>
