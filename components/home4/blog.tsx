@@ -1,47 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const blogs: {
-  day: string;
-  month: string;
-  year: string;
-  author: string;
-  country: string;
-  title: string;
-  link: string;
-  image: string;
-}[] = [
-  {
-    day: "28",
-    month: "Aug",
-    year: "2026",
-    author: "Dev Team",
-    country: "Global",
-    title: "Accelerating Web App Performance",
-    link: "/blog/blog1",
-    image: "/placeholder.png",
-  },
-  {
-    day: "27",
-    month: "Aug",
-    year: "2026",
-    author: "Dev Team",
-    country: "Global",
-    title: "Building AI-Powered Solutions",
-    link: "/blog/blog2",
-    image: "/placeholder.png",
-  },
-  {
-    day: "26",
-    month: "Aug",
-    year: "2026",
-    author: "Dev Team",
-    country: "Global",
-    title: "Mobile Development Best Practices",
-    link: "/blog/blog3",
-    image: "/placeholder.png",
-  },
-];
+import { blogs } from "@/constants";
 
 export default function Blog() {
   return (

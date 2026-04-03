@@ -21,17 +21,18 @@ export default function Sidebar() {
             </div>
             <div className="bfwe_inner">
               <p>
-                Let&apos;s get started! Contact us for a free quote on your next
-                home improvement project.
+                Have an app idea in mind? Let’s turn it into a powerful mobile
+                experience. Contact us today for a free consultation and project
+                estimate.
               </p>
-              <Link href="/contact">Request an Estimate</Link>
+              <Link href="/contact">Request a Quote</Link>
             </div>
           </div>
         </div>
 
         <div className="widget_block widget_brochure">
           <div className="wid-title">
-            <span>Company Presentation</span>
+            <span>Company Overview</span>
           </div>
           <div className="industify_fn_widget_brochure">
             <div className="fn_brochures">

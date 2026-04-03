@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useState } from "react";
+import { services } from "@/constants";
 import {
   Facebook,
   Instagram,
@@ -29,10 +30,10 @@ export default function DesktopHeader() {
         <div className="industify_fn_toppanel">
           <div className="left_panel">
             <div className="info">
-              <a href="tel:+923007331236">+92 (300) 733-1236</a>
+              <a href="tel:+923152655111">+92 (315) 2655111</a>
             </div>
             <div className="info">
-              <a href="mailto:info@zahometex.com">info@zahometex.com</a>
+              <a href="mailto:info@ehtishamalik.com">info@ehtishamalik.com</a>
             </div>
             <div className="industify_fn_social_list">
               <ul>
@@ -109,9 +110,11 @@ export default function DesktopHeader() {
               <li className="menu-item-has-children">
                 <Link href="/services">Our Services</Link>
                 <ul className="sub-menu">
-                  <li>
-                    <Link href="/services/single">Single Service</Link>
-                  </li>
+                  {services.map((service, index) => (
+                    <li key={index}>
+                      <Link href={service.link}>{service.title}</Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li className="menu-item-has-children">
@@ -214,13 +217,8 @@ export default function DesktopHeader() {
                   style={{ backgroundImage: `url(${background})` }}
                 ></div>
                 <p>
-                  <span>Toll Free:</span>{" "}
-                  <a
-                    href="tel:+92616772629"
-                    style={{ color: "white", textDecoration: "none" }}
-                  >
-                    +92 (616) 772-629
-                  </a>
+                  <span>Contact Us:</span>{" "}
+                  <a href="tel:+923152655111">+92 (315) 2655111</a>
                 </p>
               </div>
             </div>
