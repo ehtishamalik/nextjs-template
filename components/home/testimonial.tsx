@@ -2,7 +2,7 @@ import { Quotes } from "@/public/svg/icon";
 
 const testimonial = "/placeholder.png";
 
-export default function HomeTestimonial() {
+export default function Testimonial() {
   return (
     <div
       className="testimonial_section"
@@ -17,15 +17,14 @@ export default function HomeTestimonial() {
             <Quotes className="fn__svg" />
             <div className="content_holder">
               <p>
-                Hiday Motors needed to build a brand new 28,000 sf facility that
-                would both meet our needs and comply with GMs standards - which
-                seemed daunting, to say the least. Industify alleviated all of
-                our concerns and communicated with us every step of the way. We
-                have received dozens of compliments from our customers, and our
-                employees love the new store!
+                “Working with this team transformed our digital product vision
+                into reality. Their expertise in web, mobile, and AI development
+                ensured everything was delivered on time, scalable, and secure.
+                Communication was clear throughout, and the final product
+                exceeded our expectations.”
               </p>
-              <h3>Steve Lehman</h3>
-              <h5>CEO of Company.</h5>
+              <h3>Jane Roberts</h3>
+              <h5>CTO, Tech Innovators Inc.</h5>
             </div>
           </div>
         </div>

@@ -2,11 +2,50 @@ import Image from "next/image";
 import Link from "next/link";
 
 const map = "/icons/map.png";
-const blog1 = "/placeholder.png";
-const blog2 = "/placeholder.png";
-const blog3 = "/placeholder.png";
 
-export default function HomeBlog() {
+const blogs: {
+  day: string;
+  month: string;
+  year: string;
+  author: string;
+  country: string;
+  title: string;
+  link: string;
+  image: string;
+}[] = [
+  {
+    day: "28",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Accelerating Web App Performance",
+    link: "/blog/blog1",
+    image: "/placeholder.png",
+  },
+  {
+    day: "27",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Building AI-Powered Solutions",
+    link: "/blog/blog2",
+    image: "/placeholder.png",
+  },
+  {
+    day: "26",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Mobile Development Best Practices",
+    link: "/blog/blog3",
+    image: "/placeholder.png",
+  },
+];
+
+export default function Blog() {
   return (
     <div className="blog_section">
       <div className="overlay" style={{ backgroundImage: `url(${map})` }}></div>
@@ -15,7 +54,7 @@ export default function HomeBlog() {
       <div className="fn_cs_main_title">
         <div className="container">
           <div className="title_holder">
-            <h3>Thoughts &amp; Experiments</h3>
+            <h3>Insights & Experiments</h3>
           </div>
         </div>
       </div>
@@ -26,114 +65,42 @@ export default function HomeBlog() {
         <div className="container">
           <div className="inner">
             <ul>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: `url(${blog1})` }}
-                  >
-                    <div className="time">
-                      <span></span>
-                      <h3>28</h3>
-                      <h5>Aug</h5>
-                      <h5>2018</h5>
+              {blogs.map((blog, index) => (
+                <li key={index}>
+                  <div className="item">
+                    <div
+                      className="img_holder"
+                      style={{ backgroundImage: `url(${blog.image})` }}
+                    >
+                      <div className="time">
+                        <span></span>
+                        <h3>{blog.day}</h3>
+                        <h5>{blog.month}</h5>
+                        <h5>{blog.year}</h5>
+                      </div>
+                      <Link href={blog.link}></Link>
+                      <Image
+                        width={370}
+                        height={250}
+                        src={blog.image}
+                        alt={blog.title}
+                      />
                     </div>
-                    <Link href="/blog/blogSinglePage1"></Link>
-                    <Image
-                      width={370}
-                      height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <p className="t_header">
-                      By <Link href="#">Frenify</Link> — In{" "}
-                      <Link href="#">Australia</Link>
-                    </p>
-                    <h3>
-                      <Link href="/blog/blogSinglePage1">
-                        Lorem ipsum dolor sit amet consectetur.
-                      </Link>
-                    </h3>
-                    <p className="t_footer">
-                      <Link href="/blog/blogSinglePage1">Read More</Link>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: `url(${blog2})` }}
-                  >
-                    <div className="time">
-                      <span></span>
-                      <h3>27</h3>
-                      <h5>Aug</h5>
-                      <h5>2018</h5>
+                    <div className="title_holder">
+                      <p className="t_header">
+                        By <Link href="#">{blog.author}</Link> — In{" "}
+                        <Link href="#">{blog.country}</Link>
+                      </p>
+                      <h3>
+                        <Link href={blog.link}>{blog.title}</Link>
+                      </h3>
+                      <p className="t_footer">
+                        <Link href={blog.link}>Read More</Link>
+                      </p>
                     </div>
-                    <Link href="/blog/blogSinglePage2"></Link>
-                    <Image
-                      width={370}
-                      height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
-                    />
                   </div>
-                  <div className="title_holder">
-                    <p className="t_header">
-                      By <Link href="#">Frenify</Link> — In{" "}
-                      <Link href="#">Australia</Link>
-                    </p>
-                    <h3>
-                      <Link href="/blog/blogSinglePage2">
-                        Lorem ipsum dolor sit amet consectetur.
-                      </Link>
-                    </h3>
-                    <p className="t_footer">
-                      <Link href="/blog/blogSinglePage2">Read More</Link>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: `url(${blog3})` }}
-                  >
-                    <div className="time">
-                      <span></span>
-                      <h3>26</h3>
-                      <h5>Aug</h5>
-                      <h5>2018</h5>
-                    </div>
-                    <Link href="/blog/blogSinglePage3"></Link>
-                    <Image
-                      width={370}
-                      height={250}
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <p className="t_header">
-                      By <Link href="#">Frenify</Link> — In{" "}
-                      <Link href="#">Australia</Link>
-                    </p>
-                    <h3>
-                      <Link href="/blog/blogSinglePage3">
-                        Lorem ipsum dolor sit amet consectetur.
-                      </Link>
-                    </h3>
-                    <p className="t_footer">
-                      <Link href="/blog/blogSinglePage3">Read More</Link>
-                    </p>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

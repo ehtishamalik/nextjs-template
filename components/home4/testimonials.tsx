@@ -6,10 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FiveStars, Quote } from "@/public/svg/icon";
 
 register();
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 export default function Home4Testimonial() {
   const testimonial = [

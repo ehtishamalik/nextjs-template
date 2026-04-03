@@ -2,7 +2,32 @@ import Link from "next/link";
 
 import { Arrow_r } from "@/public/svg/icon";
 
-export default function HomePrinciples() {
+const content: {
+  index: string;
+  title: string;
+  description: string;
+}[] = [
+  {
+    index: "01",
+    title: "Engineering Excellence",
+    description:
+      "We write clean, maintainable, and scalable code. Every solution is built with long-term performance, reliability, and best practices in mind.",
+  },
+  {
+    index: "02",
+    title: "Client-Focused Delivery",
+    description:
+      "We align with your business goals, not just technical requirements. Clear communication, fast iterations, and practical solutions drive everything we do.",
+  },
+  {
+    index: "03",
+    title: "Quality Without Compromise",
+    description:
+      "From architecture to deployment, we ensure every product meets high standards. Testing, performance, and security are never treated as optional.",
+  },
+];
+
+export default function Principles() {
   return (
     <div className="fn_cs_principles_modern">
       <div className="container">
@@ -12,57 +37,23 @@ export default function HomePrinciples() {
             <span className="shape2"></span>
           </div>
           <ul className="fn_cs_miniboxes">
-            <li>
-              <div className="item">
-                <div className="title_holder">
-                  <Link href="/principles#Craftsmanship"></Link>
-                  <h3>Craftsmanship</h3>
-                  <p>
-                    We take pride in crafting every product with care, ensuring
-                    durability, comfort, and detail across all our textile
-                    collections.
-                  </p>
-                  <span className="icon">
-                    <Arrow_r className="fn__svg" />
-                  </span>
+            {content.map((item, index) => (
+              <li key={index}>
+                <div className="item">
+                  <div className="title_holder">
+                    <Link
+                      href={`/principles#${item.title.replace(/\s+/g, "")}`}
+                    ></Link>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    <span className="icon">
+                      <Arrow_r className="fn__svg" />
+                    </span>
+                  </div>
+                  <div className="number_holder">{item.index}</div>
                 </div>
-                <div className="number_holder">01</div>
-              </div>
-            </li>
-            <li>
-              <div className="item">
-                <div className="title_holder">
-                  <Link href="/principles#CustomerCommitment"></Link>
-                  <h3>Customer Commitment</h3>
-                  <p>
-                    Our mission is to deliver solutions that truly meet our
-                    customers’ needs, providing reliable service and products
-                    that make everyday living better.
-                  </p>
-                  <span className="icon">
-                    <Arrow_r className="fn__svg" />
-                  </span>
-                </div>
-                <div className="number_holder">02</div>
-              </div>
-            </li>
-            <li>
-              <div className="item">
-                <div className="title_holder">
-                  <Link href="/principles#Quality"></Link>
-                  <h3>Quality You Can Trust</h3>
-                  <p>
-                    We guarantee consistency and professionalism by using
-                    high-grade fabrics and precise workmanship, offering value
-                    you can depend on.
-                  </p>
-                  <span className="icon">
-                    <Arrow_r className="fn__svg" />
-                  </span>
-                </div>
-                <div className="number_holder">03</div>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

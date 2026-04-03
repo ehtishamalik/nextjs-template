@@ -1,49 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Arrow_r } from "../../public/svg/icon";
+import { Arrow_r } from "@/public/svg/icon";
 
-const services = [
+const services: {
+  title: string;
+  link: string;
+  bg: string;
+}[] = [
   {
-    link: "/services/hospital-line",
+    title: "Web & Frontend Development",
+    link: "/services/web-frontend",
     bg: "/placeholder.png",
-    title: "Hospital Textiles & Medical Linen",
   },
   {
-    link: "/services/bed-linen",
+    title: "Backend & API Solutions",
+    link: "/services/backend-api",
     bg: "/placeholder.png",
-    title: "Premium Bed Linen Collection",
   },
   {
-    link: "/services/table-cover-napkins",
+    title: "AI & Intelligent Agents",
+    link: "/services/ai-agents",
     bg: "/placeholder.png",
-    title: "Table Covers, Napkins & Dining Linen",
   },
   {
-    link: "/services/kitchen-tea-towels",
+    title: "Mobile App Development",
+    link: "/services/mobile-dev",
     bg: "/placeholder.png",
-    title: "Kitchen Tea Towels & Jacquard Towels",
   },
-  // {
-  //   link: "/services/bath-robes-towels",
-  //   bg: "/placeholder.png",
-  //   title: "Bath Towels, Robes & Terry Products",
-  // },
-  // {
-  //   link: "/services/curtains",
-  //   bg: "/placeholder.png",
-  //   title: "Curtains & Home Textile Solutions",
-  // },
-  // {
-  //   link: "/services/summer-beach-dress",
-  //   bg: "/placeholder.png",
-  //   title: "Summer Beach Dresses & Casual Wear",
-  // },
-  // {
-  //   link: "/services/terry-kitchen-towel",
-  //   bg: "/placeholder.png",
-  //   title: "Terry Kitchen Towels & Terry Products",
-  // },
 ];
 
 export default function HomeServices() {
@@ -57,10 +41,10 @@ export default function HomeServices() {
       >
         <div className="top_bar">
           <div className="t_inner">
-            <h3>Our Industries</h3>
+            <h3>Our Expertise</h3>
             <span>
-              We manufacture high-quality textile products for homes, hospitals,
-              hospitality and daily living.
+              We deliver end-to-end software solutions across web, mobile, AI,
+              and enterprise systems.
             </span>
           </div>
         </div>

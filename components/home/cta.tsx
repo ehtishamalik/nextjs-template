@@ -1,19 +1,19 @@
 import Link from "next/link";
 
-export default function HomeCTA() {
+export default function CTA() {
   return (
     <div className="fn_cs_call_to_action">
       <div className="container">
         <div className="cta_holder">
           <div className="title_holder">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+            <h3>Bring Your Ideas to Life with Expert Developers</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-              enim? Reprehenderit ea provident libero illo.
+              We build web, mobile, and AI solutions that drive results. Let’s
+              turn your vision into a scalable, high-performance product.
             </p>
           </div>
           <div className="link_holder">
-            <Link href="#">Work With Us</Link>
+            <Link href="/contact">Work With Us</Link>
           </div>
         </div>
       </div>

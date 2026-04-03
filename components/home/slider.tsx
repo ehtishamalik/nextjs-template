@@ -7,13 +7,43 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // register Swiper custom elements
 register();
 
-// Images imported
-const slider1 = "/placeholder.png";
-const slider2 = "/placeholder.png";
-const slider3 = "/placeholder.png";
-const slider4 = "/placeholder.png";
+const content: {
+  title: string;
+  description: string;
+  category: string;
+  image: string;
+}[] = [
+  {
+    category: "Digital Solutions",
+    title: "Building Scalable Software That Grows With You",
+    description:
+      "We design and develop high-performance web platforms, APIs, and systems built for scale. From idea to deployment, we turn complex requirements into reliable digital products.",
+    image: "/placeholder.png",
+  },
+  {
+    category: "Frontend Engineering",
+    title: "Modern Interfaces That Users Actually Enjoy",
+    description:
+      "We craft fast, responsive, and intuitive user experiences using modern frameworks. Every interaction is designed to be smooth, accessible, and conversion-focused.",
+    image: "/placeholder.png",
+  },
+  {
+    category: "Backend & Architecture",
+    title: "Robust Systems Powering Your Business",
+    description:
+      "Our backend solutions are secure, scalable, and built for performance. We handle data, integrations, and infrastructure so your product runs flawlessly under any load.",
+    image: "/placeholder.png",
+  },
+  {
+    category: "AI & Automation",
+    title: "Smart Systems That Work While You Sleep",
+    description:
+      "We build AI-powered tools, automation pipelines, and intelligent agents that reduce manual work, improve decisions, and unlock new efficiencies for your business.",
+    image: "/placeholder.png",
+  },
+];
 
-export default function HomeSlider() {
+export default function Slider() {
   return (
     <div
       className="industify_slider_alpha"
@@ -66,114 +96,31 @@ export default function HomeSlider() {
         }}
         className="custom-class"
       >
-        <SwiperSlide>
-          <div className="item">
-            <div
-              className="img_holder"
-              style={{ backgroundImage: `url(${slider1})` }}
-            ></div>
-            <div className="title_holder">
-              <div className="inner">
-                <div className="in">
-                  <p>
-                    <span>lorem</span>
-                  </p>
-                  <h3>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                  </h3>
-                  <div className="desc">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Voluptatum esse, incidunt voluptate at ipsam deleniti
-                      laborum harum molestias! Facere, numquam?
-                    </span>
+        {content.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="item">
+              <div
+                className="img_holder"
+                style={{ backgroundImage: `url(${item.image})` }}
+              ></div>
+              <div className="title_holder">
+                <div className="inner">
+                  <div className="in">
+                    <p>
+                      <span>{item.category}</span>
+                    </p>
+                    <h3>
+                      <span>{item.title}</span>
+                    </h3>
+                    <div className="desc">
+                      <span>{item.description}</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <div
-              className="img_holder"
-              style={{ backgroundImage: `url(${slider2})` }}
-            ></div>
-            <div className="title_holder">
-              <div className="inner">
-                <div className="in">
-                  <p>
-                    <span>lorem</span>
-                  </p>
-                  <h3>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                  </h3>
-                  <div className="desc">
-                    <span>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officia et illum quidem ducimus maxime labore id
-                      aspernatur, harum sunt totam!
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <div
-              className="img_holder"
-              style={{ backgroundImage: `url(${slider3})` }}
-            ></div>
-            <div className="title_holder">
-              <div className="inner">
-                <div className="in">
-                  <p>
-                    <span>lorem</span>
-                  </p>
-                  <h3>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                  </h3>
-                  <div className="desc">
-                    <span>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Itaque minus fugit quam, veniam excepturi repellendus?
-                      Saepe neque iste velit non.
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <div
-              className="img_holder"
-              style={{ backgroundImage: `url(${slider4})` }}
-            ></div>
-            <div className="title_holder">
-              <div className="inner">
-                <div className="in">
-                  <p>
-                    <span>lorem</span>
-                  </p>
-                  <h3>
-                    <span>Lorem, ipsum.</span>
-                  </h3>
-                  <div className="desc">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Id quis recusandae alias minima consectetur necessitatibus
-                      vero nemo fugiat magni saepe!
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

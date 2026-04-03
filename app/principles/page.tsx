@@ -1,5 +1,93 @@
 import Breadcumb from "@/components/layout/breadcumb";
 
+const principles: {
+  id: string;
+  index: string;
+  title: string;
+  description: string[];
+}[] = [
+  {
+    id: "EngineeringExcellence",
+    index: "01",
+    title: "Engineering Excellence",
+    description: [
+      "We write clean, maintainable, and scalable code, ensuring every solution is built for long-term performance and reliability.",
+      "Attention to architecture, efficiency, and robustness guarantees software that performs flawlessly under real-world conditions.",
+      "This approach ensures consistency across every product we deliver.",
+    ],
+  },
+  {
+    id: "Client-FocusedDelivery",
+    index: "02",
+    title: "Client-Focused Delivery",
+    description: [
+      "We align our work with business goals, not just technical requirements. Clear communication and fast iterations drive every project.",
+      "Practical solutions are prioritized, producing measurable results that meet client needs and create tangible business value.",
+      "Our commitment ensures a seamless experience from start to finish.",
+    ],
+  },
+  {
+    id: "QualityWithoutCompromise",
+    index: "03",
+    title: "Quality Without Compromise",
+    description: [
+      "From architecture to deployment, every product meets the highest standards. Testing, performance, and security are never optional.",
+      "Our rigorous approach ensures reliable, secure, and high-performing outcomes, giving clients confidence in every solution we deliver.",
+      "We never compromise on standards, no matter the scale of production.",
+    ],
+  },
+  {
+    id: "CraftsmanshipPassion",
+    index: "04",
+    title: "Craftsmanship & Passion",
+    description: [
+      "Every textile we create is a result of skilled hands and attention to detail. From selecting premium fabrics to perfecting finishing techniques, we ensure durability, comfort, and style.",
+      "Our designers blend traditional artistry with modern innovations to produce textiles that inspire and endure, reflecting our commitment to excellence and creativity.",
+      "Innovation enables us to deliver better value while staying future-ready.",
+    ],
+  },
+  {
+    id: "CustomerCommitment",
+    index: "05",
+    title: "Customer Commitment",
+    description: [
+      "We prioritize our clients’ needs, providing tailored solutions with transparency and care. Feedback is valued at every step, ensuring consistent quality and timely delivery.",
+      "By building long-term relationships grounded in trust and reliability, we ensure every interaction strengthens our reputation and client satisfaction.",
+      "This mindset helps us grow continuously while staying grounded.",
+    ],
+  },
+  {
+    id: "QualityYouCanTrust",
+    index: "06",
+    title: "Quality You Can Trust",
+    description: [
+      "Quality is the foundation of our work. Every product undergoes multi-stage inspections and is made from carefully sourced materials to meet international standards.",
+      "From hospital linens to home textiles, we ensure durability, comfort, and aesthetic excellence, guaranteeing products that last and impress.",
+      "We continuously refine our code and processes to meet evolving demands.",
+    ],
+  },
+  {
+    id: "InnovationAndSustainability",
+    index: "07",
+    title: "Innovation & Sustainability",
+    description: [
+      "We embrace modern technology and eco-friendly practices to stay ahead. Smart weaving techniques, sustainable dyes, and advanced machinery allow for precision and reduced waste.",
+      "Continuous experimentation and innovation keep our products versatile, relevant, and aligned with global market demands, while protecting the environment.",
+      "This ensures faster delivery cycles without sacrificing quality.",
+    ],
+  },
+  {
+    id: "IntegrityAndHumility",
+    index: "08",
+    title: "Integrity & Humility",
+    description: [
+      "Humility and ethical practices guide every decision. We listen to clients, partners, and team members, applying feedback to improve our processes.",
+      "Transparency, accountability, and respect strengthen trust in every interaction, ensuring our company remains a reliable and ethical partner.",
+      "We maintain strict quality checks to ensure long-term reliability.",
+    ],
+  },
+];
+
 export default function Principles() {
   return (
     <>
@@ -13,136 +101,21 @@ export default function Principles() {
         <div className="container">
           <div className="principles">
             <ul>
-              <li>
-                <div className="item" id="Honesty">
-                  <div className="item_left">
-                    <h2>01.</h2>
-                    <h3>Honesty</h3>
+              {principles.map((item, index) => (
+                <li key={index}>
+                  <div className="item" id={item.id}>
+                    <div className="item_left">
+                      <h2>{item.index}</h2>
+                      <h3>{item.title}</h3>
+                    </div>
+                    <div className="item_right">
+                      {item.description.map((desc, descIndex) => (
+                        <p key={descIndex}>{desc}</p>
+                      ))}
+                    </div>
                   </div>
-                  <div className="item_right">
-                    <p>
-                      We believe honesty is the foundation of strong and lasting
-                      relationships. Whether we are working with suppliers,
-                      clients, or team members, we maintain complete
-                      transparency in our commitments, pricing, and production
-                      processes.
-                    </p>
-                    <p>
-                      Every fabric we craft and every promise we make reflects
-                      our genuine dedication to integrity. We communicate
-                      openly, take responsibility, and ensure our clients always
-                      know exactly what to expect.
-                    </p>
-                    <p>
-                      Through ethical practices and truthful communication, we
-                      continue to build trust—one thread at a time.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="item" id="Passion">
-                  <div className="item_left">
-                    <h2>02.</h2>
-                    <h3>Passion</h3>
-                  </div>
-                  <div className="item_right">
-                    <p>
-                      Textiles are more than a business to us—they are our
-                      craft, our creativity, and our passion. From designing
-                      patterns to perfecting finishing techniques, we put heart
-                      and soul into every step of production.
-                    </p>
-                    <p>
-                      Our team constantly explores trends, technologies, and
-                      improvements that bring more value to our customers while
-                      keeping our enthusiasm alive.
-                    </p>
-                    <p>
-                      This passion drives us to exceed expectations and create
-                      textile products that truly inspire.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="item" id="Quality">
-                  <div className="item_left">
-                    <h2>03.</h2>
-                    <h3>Quality Work</h3>
-                  </div>
-                  <div className="item_right">
-                    <p>
-                      Quality is at the core of everything we manufacture. We
-                      use carefully sourced materials, tested production
-                      methods, and multi-stage quality inspections to ensure
-                      every product meets international standards.
-                    </p>
-                    <p>
-                      Whether producing hospital linen, towels, garments, or
-                      home textiles, our focus remains on durability, comfort,
-                      and aesthetic excellence.
-                    </p>
-                    <p>
-                      Our commitment to quality ensures that our clients receive
-                      products that look great, feel great, and stand the test
-                      of time.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="item" id="Innovation">
-                  <div className="item_left">
-                    <h2>04.</h2>
-                    <h3>Innovation</h3>
-                  </div>
-                  <div className="item_right">
-                    <p>
-                      We embrace innovation to stay ahead in a rapidly evolving
-                      textile industry. From modern weaving techniques to
-                      environmentally friendly processes, we constantly seek
-                      smarter ways to create better products.
-                    </p>
-                    <p>
-                      Our investment in technology and continuous improvement
-                      allows us to reduce waste, enhance precision, and
-                      introduce new designs and fabric solutions.
-                    </p>
-                    <p>
-                      Innovation helps us deliver value-driven textiles that
-                      meet the diverse needs of global markets.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="item" id="Humility">
-                  <div className="item_left">
-                    <h2>05.</h2>
-                    <h3>Humility</h3>
-                  </div>
-                  <div className="item_right">
-                    <p>
-                      We value humility as a guiding force in our daily
-                      operations. It keeps us grounded, encourages teamwork, and
-                      opens doors for learning.
-                    </p>
-                    <p>
-                      We listen to our clients, respect feedback, and treat
-                      every project—big or small—with equal importance.
-                    </p>
-                    <p>
-                      Humility helps us grow, evolve, and remain a trusted
-                      partner in the textile industry.
-                    </p>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function HomeAbout() {
+export default function About() {
   return (
     <div className="about_section">
       {/* <!-- About Shortcode --> */}
@@ -9,23 +9,26 @@ export default function HomeAbout() {
           <div className="a_inner">
             <div className="leftpart">
               <div className="title_holder">
-                <h3 className="title">Lorem ipsum dolor sit amet.</h3>
+                <h3 className="title">
+                  We Build Software That Solves Real Problems
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima eius suscipit repellendus dicta aspernatur commodi
-                  enim, quasi eligendi, fugiat cum magni, laborum vel quo
-                  accusantium quod autem? Autem, voluptatem perspiciatis.
+                  We are a team of developers, engineers, and problem-solvers
+                  focused on building reliable digital products. From web
+                  applications to complex backend systems, we turn ideas into
+                  scalable solutions that businesses can depend on.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  veritatis ducimus quam aliquid? Quam officia modi laborum
-                  quae? Quaerat vero voluptatibus reprehenderit vel excepturi
-                  quasi consequatur tempora quis. Expedita, nam?
+                  Our approach is simple—understand the problem deeply, design
+                  with clarity, and build with precision. Whether it’s frontend
+                  experiences, backend architecture, AI-driven tools, or mobile
+                  apps, we focus on delivering software that performs, scales,
+                  and lasts.
                 </p>
               </div>
               <div className="sign_holder">
-                <h3 className="name">Alan Michaelis</h3>
-                <p className="occ">Chief Executive</p>
+                <h3 className="name">Ehtisham Ali</h3>
+                <p className="occ">Founder & Lead Developer</p>
               </div>
             </div>
             <div className="rightpart">

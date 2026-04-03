@@ -1,5 +1,8 @@
 import "./globals.css";
-import "swiper/css/effect-fade";
+import "swiper/swiper.css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/effect-fade";
 import "../node_modules/react-modal-video/css/modal-video.css";
 // import "metismenujs/dist/metismenujs.css";
 import "@/styles/css/base.css";
@@ -10,7 +13,7 @@ import "@/styles/css/justified.css";
 import "@/styles/css/magnific-popup.css";
 import "@/styles/css/nice-select.css";
 import "@/styles/css/style.css";
-import "@/styles/css/swiper.css";
+// import "@/styles/css/swiper.css";
 
 import DesktopHeader from "@/components/layout/desktop-header";
 import Footer from "@/components/layout/footer";
