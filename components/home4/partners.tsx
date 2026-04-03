@@ -110,8 +110,11 @@ export default function Partners() {
           <div className="contact_in">
             <div className="contact_left">
               <div className="left_in">
-                <h3>Do you want to be in our clients list?</h3>
-                <p>You have a very good chance right now. Don’t miss it out</p>
+                <h3>Want Your App Featured in Our Clients’ Success Stories?</h3>
+                <p>
+                  Now’s the perfect opportunity to join our growing list of
+                  satisfied clients. Let’s build something amazing together.
+                </p>
               </div>
             </div>
             <div className="contact_right">

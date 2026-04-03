@@ -1,6 +1,48 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const blogs: {
+  day: string;
+  month: string;
+  year: string;
+  author: string;
+  country: string;
+  title: string;
+  link: string;
+  image: string;
+}[] = [
+  {
+    day: "28",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Accelerating Web App Performance",
+    link: "/blog/blog1",
+    image: "/placeholder.png",
+  },
+  {
+    day: "27",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Building AI-Powered Solutions",
+    link: "/blog/blog2",
+    image: "/placeholder.png",
+  },
+  {
+    day: "26",
+    month: "Aug",
+    year: "2026",
+    author: "Dev Team",
+    country: "Global",
+    title: "Mobile Development Best Practices",
+    link: "/blog/blog3",
+    image: "/placeholder.png",
+  },
+];
+
 export default function Blog() {
   return (
     <div className="section_5">
@@ -15,114 +57,41 @@ export default function Blog() {
         <div className="container max1500">
           <div className="inner">
             <ul>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: "url(/placeholder.png)" }}
-                  >
-                    <Link href="/blog/blogSinglePage1"></Link>
-                    <Image
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder image"
-                      width={370}
-                      height={250}
-                    />
+              {blogs.map((blog, index) => (
+                <li key={index}>
+                  <div className="item">
+                    <div
+                      className="img_holder"
+                      style={{ backgroundImage: `url(${blog.image})` }}
+                    >
+                      <Link href={blog.link}></Link>
+                      <Image
+                        src="/thumbnails/370-250.jpg"
+                        alt="placeholder image"
+                        width={370}
+                        height={250}
+                      />
+                    </div>
+                    <div className="beta_t_holder">
+                      <p className="t_header">
+                        <span className="t_author">
+                          By{" "}
+                          <Link href="#" target="_blank" rel="noreferrer">
+                            {blog.author}
+                          </Link>
+                        </span>{" "}
+                        /{" "}
+                        <span>
+                          {blog.month} {blog.day}, {blog.year}
+                        </span>
+                      </p>
+                      <h3>
+                        <Link href={blog.link}>{blog.title}</Link>
+                      </h3>
+                    </div>
                   </div>
-                  <div className="beta_t_holder">
-                    <p className="t_header">
-                      <span className="t_author">
-                        By{" "}
-                        <Link
-                          href="https://themeforest.net/user/trendycoder"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          TrendyCoder
-                        </Link>
-                      </span>{" "}
-                      / <span>August 28, 2018</span>
-                    </p>
-                    <h3>
-                      <Link href="/blog/blogSinglePage1">
-                        Laing O’Rourke: Moves, projects and bids
-                      </Link>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: "url(/placeholder.png)" }}
-                  >
-                    <Link href="/blog/blogSinglePage2"></Link>
-                    <Image
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder image"
-                      width={370}
-                      height={250}
-                    />
-                  </div>
-                  <div className="beta_t_holder">
-                    <p className="t_header">
-                      <span className="t_author">
-                        By{" "}
-                        <Link
-                          href="https://themeforest.net/user/trendycoder"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          TrendyCoder
-                        </Link>
-                      </span>{" "}
-                      / <span>August 27, 2018</span>
-                    </p>
-                    <h3>
-                      <Link href="/blog/blogSinglePage2">
-                        How to turn Victorian gasholders apartments
-                      </Link>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <div
-                    className="img_holder"
-                    style={{ backgroundImage: "url(/placeholder.png)" }}
-                  >
-                    <Link href="/blog/blogSinglePage3"></Link>
-                    <Image
-                      src="/thumbnails/370-250.jpg"
-                      alt="placeholder image"
-                      width={370}
-                      height={250}
-                    />
-                  </div>
-                  <div className="beta_t_holder">
-                    <p className="t_header">
-                      <span className="t_author">
-                        By{" "}
-                        <Link
-                          href="https://themeforest.net/user/trendycoder"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          TrendyCoder
-                        </Link>
-                      </span>{" "}
-                      / <span>August 26, 2018</span>
-                    </p>
-                    <h3>
-                      <Link href="https://industify.frenify.net/1/citb-appoints-peter-lauener-as-new-chairman/">
-                        CITB appoints Peter Lauener as new chairman
-                      </Link>
-                    </h3>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

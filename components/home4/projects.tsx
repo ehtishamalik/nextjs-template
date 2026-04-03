@@ -122,11 +122,11 @@ export default function Projects() {
         <div className="container max1500">
           <div className="desc_holder">
             <p>
-              It’s about time for a live page builder, with no limits of design.
-              A page builder that delivers high-end page designs and advanced
-              capabilities, never before seen on WordPress. These floods develop
-              as a result of rainfall events that are at or near the yearly
-              maximum.
+              We create mobile applications that combine elegant design with
+              robust functionality. From concept to deployment, our apps deliver
+              seamless performance across devices, integrate securely with
+              backend systems, and provide engaging user experiences that help
+              businesses grow.
             </p>
           </div>
         </div>

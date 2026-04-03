@@ -6,7 +6,7 @@ export default function ProjectElegantList() {
     <div className="section_3">
       <div className="title__holder" data-margin-bottom="120">
         <div className="container max1500">
-          <h3>What our clients saying about us?</h3>
+          <h3>What Our Clients Say About Our Mobile Apps</h3>
         </div>
       </div>
 
@@ -30,14 +30,15 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage1"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Gas and Oil</p>
+                    <p>Finance App</p>
                     <h3>
-                      <Link href="/portfolioSinglePage1">
-                        Industify Gas and Oil Organization
+                      <Link href="#">
+                        Secure and intuitive mobile banking experience for
+                        global users.
                       </Link>
                     </h3>
                   </div>
@@ -60,14 +61,15 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage2"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Machinery</p>
+                    <p>Health Tracker</p>
                     <h3>
-                      <Link href="/portfolioSinglePage2">
-                        Odeon Industrial Machinery
+                      <Link href="#">
+                        Cross-platform app delivering real-time health metrics
+                        and insights.
                       </Link>
                     </h3>
                   </div>
@@ -88,14 +90,15 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage3"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Car Industry</p>
+                    <p>E-Commerce App</p>
                     <h3>
-                      <Link href="/portfolioSinglePage3">
-                        Chaban Car Industry
+                      <Link href="#">
+                        Seamless shopping experience with fast checkout and
+                        personalized recommendations.
                       </Link>
                     </h3>
                   </div>
@@ -119,14 +122,15 @@ export default function ProjectElegantList() {
                       backgroundImage: "url(/placeholder.png)",
                     }}
                   >
-                    <Link href="/portfolioSinglePage4"></Link>
+                    <Link href="#"></Link>
                   </div>
                 </div>
                 <div className="title_holder">
-                  <p>Aerospace</p>
+                  <p>Travel & Booking App</p>
                   <h3>
-                    <Link href="/portfolioSinglePage4">
-                      Arturo-Merino-Benítez
+                    <Link href="#">
+                      Smooth UX for flight, hotel, and activity booking in one
+                      app.
                     </Link>
                   </h3>
                 </div>
@@ -147,14 +151,15 @@ export default function ProjectElegantList() {
                       backgroundImage: "url(/placeholder.png)",
                     }}
                   >
-                    <Link href="/portfolioSinglePage5"></Link>
+                    <Link href="#"></Link>
                   </div>
                 </div>
                 <div className="title_holder">
-                  <p>Construction</p>
+                  <p>Enterprise Dashboard App</p>
                   <h3>
-                    <Link href="/portfolioSinglePage5">
-                      Femern Tunnel, Germany-Denmark
+                    <Link href="#">
+                      Mobile dashboards for enterprise clients with real-time
+                      analytics.
                     </Link>
                   </h3>
                 </div>
@@ -175,14 +180,15 @@ export default function ProjectElegantList() {
                       backgroundImage: "url(/placeholder.png)",
                     }}
                   >
-                    <Link href="/portfolioSinglePage6"></Link>
+                    <Link href="#"></Link>
                   </div>
                 </div>
                 <div className="title_holder">
-                  <p>Construction</p>
+                  <p>Food Delivery App</p>
                   <h3>
-                    <Link href="/portfolioSinglePage6">
-                      Meliá Hotel La Défense
+                    <Link href="#">
+                      Robust backend and user-friendly interface for ordering
+                      and delivery tracking.
                     </Link>
                   </h3>
                 </div>
@@ -206,13 +212,16 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage7"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Construction</p>
+                    <p>Social Networking App</p>
                     <h3>
-                      <Link href="/portfolioSinglePage7">MLC Tower</Link>
+                      <Link href="#">
+                        Engaging mobile platform connecting users with
+                        communities and content.
+                      </Link>
                     </h3>
                   </div>
                 </div>
@@ -234,14 +243,15 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage8"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Construction</p>
+                    <p>AI Assistant App</p>
                     <h3>
-                      <Link href="/portfolioSinglePage8">
-                        Mandarin Oriental
+                      <Link href="#">
+                        Smart AI-powered personal assistant for productivity and
+                        reminders.
                       </Link>
                     </h3>
                   </div>
@@ -262,13 +272,16 @@ export default function ProjectElegantList() {
                         backgroundImage: "url(/placeholder.png)",
                       }}
                     >
-                      <Link href="/portfolioSinglePage9"></Link>
+                      <Link href="#"></Link>
                     </div>
                   </div>
                   <div className="title_holder">
-                    <p>Construction</p>
+                    <p>Education App</p>
                     <h3>
-                      <Link href="/portfolioSinglePage9">The Peninsula</Link>
+                      <Link href="#">
+                        Interactive learning experience with gamified lessons
+                        and progress tracking.
+                      </Link>
                     </h3>
                   </div>
                 </div>
@@ -284,11 +297,11 @@ export default function ProjectElegantList() {
         <div className="container max1500">
           <div className="desc_holder">
             <p>
-              It’s about time for a live page builder, with no limits of design.
-              A page builder that delivers high-end page designs and advanced
-              capabilities, never before seen on WordPress. These floods develop
-              as a result of rainfall events that are at or near the yearly
-              maximum.
+              We design mobile applications that are both visually appealing and
+              technically robust. Every app we build is optimized for
+              performance, integrates securely with backend systems, and
+              provides an engaging, seamless experience for users across iOS and
+              Android.
             </p>
           </div>
         </div>
@@ -299,7 +312,7 @@ export default function ProjectElegantList() {
       <div className="fn_cs_button full">
         <div className="container max1500">
           <div className="inner">
-            <Link href="/portfolio">See Our Portfolio</Link>
+            <Link href="/portfolio">Explore Our Mobile App Portfolio</Link>
           </div>
         </div>
       </div>

@@ -7,9 +7,11 @@ export default function Description() {
         <div className="container max1500">
           <div className="desc_holder max500">
             <p>
-              We are construction partners who are passionate about what we do
-              and our partners success. We pride ourselves on being solution
-              providers.
+              We design and develop mobile applications that bring ideas to
+              life. From intuitive user experiences to seamless backend
+              integration, our team crafts apps that perform flawlessly across
+              iOS and Android, helping businesses engage users and grow their
+              digital presence.
             </p>
           </div>
         </div>
@@ -20,7 +22,7 @@ export default function Description() {
       <div className="fn_cs_button">
         <div className="container max1500">
           <div className="inner max500">
-            <Link href="/services">Full Services List</Link>
+            <Link href="/services">Explore Our Mobile App Services</Link>
           </div>
         </div>
       </div>
