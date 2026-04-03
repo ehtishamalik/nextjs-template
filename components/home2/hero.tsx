@@ -14,18 +14,18 @@ export default function Hero() {
           <div className="content_holder max450">
             <div className="title_holder">
               <h3>
-                Know About Mission <span>Statement</span>
+                Build AI Systems That <span>Actually Work</span>
               </h3>
               <p>
-                We are committed to providing the highest level of
-                professionalism, service response, personalised solutions,
-                competitive prices, professional and qualified, integrated
-                design and quality workmanship.
+                We design and develop AI-powered products, agents, and
+                automation systems that solve real business problems. From LLM
+                integrations to end-to-end intelligent workflows, we turn ideas
+                into production-ready AI solutions.
               </p>
             </div>
             <div className="btn_holder fn_cs_lightgallery">
               <Link href="/services" className="discover">
-                Discover our Website
+                Explore AI Solutions
               </Link>
               {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
@@ -34,7 +34,7 @@ export default function Hero() {
                 onClick={() => setIsOpen((prev) => !prev)}
               >
                 <span className="icon"></span>
-                <span className="text">Watch Video</span>
+                <span className="text">See How It Works</span>
               </span>
             </div>
           </div>
@@ -55,15 +55,10 @@ export default function Hero() {
 
       <ModalVideo
         channel="youtube"
-        // autoplay={true}
         isOpen={isOpen}
         videoId="3j3SQEUfREs"
         animationSpeed={300}
         onClose={() => setIsOpen(false)}
-        // modalVideoClose="mfp-close"
-        // classNames={{
-        //   modalVideoClose: "mfp-close",
-        // }}
       />
     </>
   );

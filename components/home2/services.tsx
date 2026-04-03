@@ -1,11 +1,32 @@
 import Link from "next/link";
 
 import { Arrow_r } from "@/public/svg/icon";
-import {
-  Drawing,
-  Learning,
-  TowerCrane,
-} from "@/public/svg/service/IconService";
+import { Learning } from "@/public/svg/service/IconService";
+
+export const services: {
+  title: string;
+  link: string;
+  description: string;
+}[] = [
+  {
+    title: "Web & Frontend Development",
+    link: "/services/web-frontend",
+    description:
+      "We build responsive, interactive, and visually stunning web interfaces using modern frameworks and best practices, ensuring an exceptional user experience across devices.",
+  },
+  {
+    title: "Backend & API Solutions",
+    link: "/services/backend-api",
+    description:
+      "Our backend solutions provide scalable, secure, and high-performance APIs, powering web and mobile applications with robust data management and seamless integrations.",
+  },
+  {
+    title: "AI & Intelligent Agents",
+    link: "/services/ai-agents",
+    description:
+      "We develop AI-powered applications and intelligent agents that automate tasks, provide smart insights, and enhance decision-making for businesses across industries.",
+  },
+];
 
 export default function Services() {
   return (
@@ -25,73 +46,24 @@ export default function Services() {
         <div className="container">
           <div className="list">
             <ul>
-              <li>
-                <div className="item">
-                  <Link href="/services/serviceSinglePage9"></Link>
-                  <span className="bg1"></span>
-                  <span className="bg2"></span>
-                  <span className="icon">
-                    <span></span>
-                    <Learning className="fn__svg" />
-                  </span>
-                  <h3>
-                    Aerospace and <br />
-                    Defense
-                  </h3>
-                  <p>
-                    Our manufacturing services provide assurance to clients that
-                    their people, processes, and products are as safe and
-                    efficient as possible. From logistics and compliance,
-                  </p>
-                  <span className="arrow">
-                    <Arrow_r className="fn__svg" />
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <Link href="/services/serviceSinglePage8"></Link>
-                  <span className="bg1"></span>
-                  <span className="bg2"></span>
-                  <span className="icon">
-                    <span></span>
-                    <Drawing className="fn__svg" />
-                    {/* <img className="fn__svg" src="/svg/service/drawing.svg" alt="svg" /> */}
-                  </span>
-                  <h3>Automative Manufacturing</h3>
-                  <p>
-                    Our manufacturing services provide assurance to clients that
-                    their people, processes, and products are as safe and
-                    efficient as possible. From logistics and compliance,
-                  </p>
-                  <span className="arrow">
-                    <Arrow_r className="fn__svg" />
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div className="item">
-                  <Link href="/services/serviceSinglePage7"></Link>
-                  <span className="bg1"></span>
-                  <span className="bg2"></span>
-                  <span className="icon">
-                    <span></span>
-                    <TowerCrane className="fn__svg" />
-                  </span>
-                  <h3>
-                    Chemical <br />
-                    Industry
-                  </h3>
-                  <p>
-                    Our manufacturing services provide assurance to clients that
-                    their people, processes, and products are as safe and
-                    efficient as possible. From logistics and compliance,
-                  </p>
-                  <span className="arrow">
-                    <Arrow_r className="fn__svg" />
-                  </span>
-                </div>
-              </li>
+              {services.map((service, index) => (
+                <li key={index}>
+                  <div className="item">
+                    <Link href="/services/serviceSinglePage9"></Link>
+                    <span className="bg1"></span>
+                    <span className="bg2"></span>
+                    <span className="icon">
+                      <span></span>
+                      <Learning className="fn__svg" />
+                    </span>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                    <span className="arrow">
+                      <Arrow_r className="fn__svg" />
+                    </span>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

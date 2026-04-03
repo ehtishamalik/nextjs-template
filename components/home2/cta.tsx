@@ -6,14 +6,15 @@ export default function CTA() {
       <div className="container">
         <div className="cta_holder">
           <div className="title_holder">
-            <h3>We will Make Your Dream Come True</h3>
+            <h3>We Build AI Solutions That Transform Businesses</h3>
             <p>
-              We are focused on sustainable business that delivers the best
-              possible project results.
+              At EA Web Studio, we design intelligent software that automates
+              processes, enhances decision-making, and drives innovation across
+              industries.
             </p>
           </div>
           <div className="link_holder">
-            <Link href="#">Our Responsibility</Link>
+            <Link href="/services">Explore Our Capabilities</Link>
           </div>
         </div>
       </div>

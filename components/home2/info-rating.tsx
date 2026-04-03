@@ -16,12 +16,12 @@ export default function InfoRating() {
             <div className="left_part">
               <div className="title_holder">
                 <h3 className="l_title">
-                  World&apos;s Leading Industry Corporation
+                  World&apos;s Leading AI Software Studio
                 </h3>
                 <p className="l_desc">
-                  To further develop our corporate strengths we have established
-                  a corporate mandate to maintain strong core values that truly
-                  reflect the companys philosophy.
+                  At EA Web Studio, we combine cutting-edge AI technologies with
+                  practical business insights to deliver intelligent software
+                  solutions that transform industries and enhance productivity.
                 </p>
               </div>
               {/* biome-ignore lint/a11y/noStaticElementInteractions: To Be Corrected */}
@@ -37,7 +37,7 @@ export default function InfoRating() {
                   <span className="icon">
                     <PlayVideo className="fn__svg" />
                   </span>
-                  <span className="text">View Company Promo Video</span>
+                  <span className="text">View EA Web Studio Promo Video</span>
                 </span>
               </div>
             </div>
@@ -72,11 +72,11 @@ export default function InfoRating() {
       </div>
       <ModalVideo
         channel="youtube"
-        // autoplay={true}
         isOpen={isOpen}
         videoId="3j3SQEUfREs"
         animationSpeed={300}
         onClose={() => setIsOpen(false)}
+        // autoplay={true}
         // modalVideoClose="mfp-close"
       />
     </>

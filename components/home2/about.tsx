@@ -9,24 +9,22 @@ export default function About() {
           <div className="a_inner">
             <div className="leftpart">
               <div className="title_holder">
-                <h3 className="title">We are Industify</h3>
+                <h3 className="title">We are EA Web Studio</h3>
                 <p>
-                  Industify is a pioneer in design-build specializing in
-                  engineering, architecture and construction services to both
-                  domestic and international customers. Founded in 1960,
-                  Industify is a family-owned company headquartered in
-                  Lexington, Ky. with offices across the U.S., Canada and Japan.
+                  EA Web Studio is a leader in building cutting-edge AI software
+                  solutions for enterprises across industries. We specialize in
+                  machine learning, computer vision, natural language
+                  processing, and intelligent automation.
                 </p>
                 <p>
-                  To provide exceptional services to the insurance industry and
-                  thier clients, the property owner. We are committed to
-                  providing the highest level of professionalism, service
-                  response, and quality workmanship.
+                  Founded in 2021, EA Web Studio combines deep technical
+                  expertise with practical business insights to deliver AI
+                  applications that drive efficiency, innovation, and growth.
                 </p>
               </div>
               <div className="sign_holder">
-                <h3 className="name">Alan Michaelis</h3>
-                <p className="occ">Chief Executive</p>
+                <h3 className="name">Ehtisham Ali</h3>
+                <p className="occ">Chief Executive Officer</p>
               </div>
             </div>
             <div className="rightpart">

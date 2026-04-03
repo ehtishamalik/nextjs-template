@@ -11,18 +11,23 @@ export default function Support() {
             <div className="content">
               <div className="desc">
                 <p>
-                  Don&apos;t hesitate and lets get started! Contact us for a
-                  free quote on your next home improvement project.
+                  Have a project in mind? Get in touch with EA Web Studio for a
+                  free consultation and see how our AI software solutions can
+                  elevate your business.
                 </p>
               </div>
               <div className="bottom_section">
                 <div className="link_block">
-                  <Link href="https://industify.frenify.net/1/contact/">
-                    Request an Estimate
-                  </Link>
+                  <Link href="/contact">Request a Free Quote</Link>
                 </div>
                 <div className="tfree_block">
-                  <a href="tel:+92616772629">+92 (616) 772-629</a>
+                  <a
+                    href="https://wa.me/923152655111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +92 (315) 265-5111
+                  </a>
                 </div>
               </div>
             </div>
