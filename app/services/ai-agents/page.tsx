@@ -3,7 +3,7 @@ import ServiceSingle from "@/components/services/service-single";
 
 const data = {
   title: "AI & Intelligent Agents",
-  image: "/placeholder.png",
+  image: "/images/ai_automation.jpg",
   description: [
     "We create AI-powered applications that automate workflows, reduce manual effort, and enhance operational efficiency across your business processes.",
     "Our intelligent agents are capable of analyzing data, interacting with users, and delivering real-time insights that support smarter decision-making.",

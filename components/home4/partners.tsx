@@ -1,6 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const partners = [
+  {
+    name: "wikoo.com",
+    url: "http://wikoo.com/",
+    image: "/partners/wikoo.png",
+  },
+  {
+    name: "aduyu.com",
+    url: "http://aduyu.com/",
+    image: "/partners/aduyu.png",
+  },
+  {
+    name: "design.com",
+    url: "http://design.com/",
+    image: "/partners/design.png",
+  },
+  {
+    name: "goldage.com",
+    url: "http://goldage.com/",
+    image: "/partners/goldage.png",
+  },
+  {
+    name: "yalgoo.com",
+    url: "http://yalgoo.com/",
+    image: "/partners/yalgoo.png",
+  },
+  {
+    name: "dalgate.com",
+    url: "http://dalgate.com/",
+    image: "/partners/dalgate.png",
+  },
+];
+
 export default function Partners() {
   return (
     <div className="section_4">
@@ -15,90 +48,28 @@ export default function Partners() {
         <div className="container max1500">
           <div className="partners_inner">
             <ul>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">wikoo.com</span>
-                  </span>
-                  <Link href="http://wikoo.com/" className="full_link"></Link>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">aduyu.com</span>
-                  </span>
-                  <Link href="http://aduyu.com/" className="full_link"></Link>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">design.com</span>
-                  </span>
-                  <Link href="http://design.com/" className="full_link"></Link>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">goldage.com</span>
-                  </span>
-                  <Link href="http://goldage.com/" className="full_link"></Link>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">yalgoo.com</span>
-                  </span>
-                  <Link href="http://yalgoo.com/" className="full_link"></Link>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <Image
-                    src="/placeholder.png"
-                    alt="placeholder"
-                    width={133}
-                    height={100}
-                  />
-                  <span className="shape">
-                    <span className="brand">dalgate.com</span>
-                  </span>
-                  <Link href="http://dalgate.com/" className="full_link"></Link>
-                </div>
-              </li>
+              {partners.map((partner, index) => (
+                <li key={index}>
+                  <div className="list_inner">
+                    <Image
+                      src={partner.image}
+                      alt={partner.name}
+                      width={133}
+                      height={100}
+                      style={{ objectFit: "contain" }}
+                    />
+                    <span className="shape">
+                      <span className="brand">{partner.name}</span>
+                    </span>
+                    <Link
+                      href={partner.url}
+                      className="full_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></Link>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -148,7 +119,12 @@ export default function Partners() {
                     <textarea id="message" placeholder="Message"></textarea>
                   </div>
                   <div className="item">
-                    <Link href="#" id="send_message">
+                    <Link
+                      href="https://wa.me/923152655111?text=Hello%20Ehtisham%20Malik%2C%20I%20have%20a%20query%20regarding%20your%20services."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      id="send_message"
+                    >
                       Send Message
                     </Link>
                   </div>

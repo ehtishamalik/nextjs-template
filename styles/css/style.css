@@ -641,6 +641,10 @@ a:focus {
 /*	04) DESKTOP HEADER
 /*------------------------------------------------------------------*/
 .industify_fn_header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+
   width: 100%;
   float: left;
   clear: both;

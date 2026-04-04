@@ -3,7 +3,7 @@ import ServiceSingle from "@/components/services/service-single";
 
 const data = {
   title: "Web & Frontend Development",
-  image: "/placeholder.png",
+  image: "/images/digital_solutions.jpg",
   description: [
     "We build modern web applications with highly responsive, pixel-perfect interfaces that deliver smooth and engaging user experiences across all devices and screen sizes.",
     "Our frontend solutions are engineered for speed, accessibility, and scalability, ensuring your product performs flawlessly even under high user demand.",

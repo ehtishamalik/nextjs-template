@@ -23,8 +23,8 @@ export default function BlogSideBar() {
                     <div className="img_holder">
                       <Link href={blog.link}>
                         <Image
-                          src="/placeholder.png"
-                          alt="placeholder"
+                          src={blog.image}
+                          alt={blog.title}
                           width={820}
                           height={600}
                         />

@@ -18,7 +18,7 @@ export default function Services() {
                         <div
                           className="img_abs"
                           style={{
-                            backgroundImage: "url(/placeholder.png)",
+                            backgroundImage: `url(${service.bg})`,
                           }}
                         ></div>
                         <Link href={service.link}></Link>

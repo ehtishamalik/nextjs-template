@@ -1,36 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { projects } from "@/constants";
 import { Arrow_r } from "@/public/svg/icon";
-
-const portfolio: {
-  title: string;
-  description: string;
-  link: string;
-  image: string;
-}[] = [
-  {
-    title: "E-Commerce Platform Redesign",
-    description:
-      "Full-stack development with seamless UX, high performance, and secure payment integration.",
-    link: "/portfolio/project1",
-    image: "/placeholder.png",
-  },
-  {
-    title: "AI-Powered Analytics Tool",
-    description:
-      "Intelligent dashboards and predictive insights to drive smarter business decisions.",
-    link: "/portfolio/project2",
-    image: "/placeholder.png",
-  },
-  {
-    title: "Enterprise Mobile App",
-    description:
-      "Cross-platform app delivering robust features and intuitive user experience.",
-    link: "/portfolio/project3",
-    image: "/placeholder.png",
-  },
-];
 
 export default function Project() {
   return (
@@ -54,7 +25,7 @@ export default function Project() {
         <div className="right_part">
           <div className="fn_cs_sticky_section">
             <ul>
-              {portfolio.map((item, index) => (
+              {projects.map((item, index) => (
                 <li key={index}>
                   <div className="item">
                     <div className="img_holder">

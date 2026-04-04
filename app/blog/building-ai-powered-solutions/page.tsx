@@ -5,7 +5,7 @@ import type { Blog } from "@/types";
 
 const blog: Blog = {
   heading: "Building AI-Powered Solutions",
-  thumbnail: "/placeholder.png",
+  thumbnail: "/images/ai_automation.jpg",
   title:
     "Artificial intelligence is transforming business operations. Learn how to design scalable, reliable AI-powered solutions that deliver actionable insights and automation.",
   highlights: [
@@ -26,7 +26,7 @@ const blog: Blog = {
   ],
   blockquote:
     "“AI is not just a technology; it’s a transformative tool that reshapes how businesses operate and make decisions.”",
-  image: { src: "/placeholder.png", alt: "AI Solutions" },
+  image: { src: "/images/digital_solutions.jpg", alt: "AI Solutions" },
   tags: ["AI", "Machine Learning", "Business"],
 };
 

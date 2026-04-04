@@ -16,7 +16,7 @@ export default function Sidebar() {
               <span className="helper6"></span>
               <div
                 className="abs_img"
-                style={{ backgroundImage: "url(/placeholder.png)" }}
+                style={{ backgroundImage: "url(/images/office_working.jpg)" }}
               ></div>
             </div>
             <div className="bfwe_inner">

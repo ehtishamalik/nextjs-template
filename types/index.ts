@@ -39,3 +39,10 @@ export interface Portfolio {
   title: string;
   link: string;
 }
+
+export interface Projects {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+}

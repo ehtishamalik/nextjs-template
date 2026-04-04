@@ -18,28 +18,28 @@ const content: {
     title: "Building Scalable Software That Grows With You",
     description:
       "We design and develop high-performance web platforms, APIs, and systems built for scale. From idea to deployment, we turn complex requirements into reliable digital products.",
-    image: "/placeholder.png",
+    image: "/images/digital_solutions.jpg",
   },
   {
     category: "Frontend Engineering",
     title: "Modern Interfaces That Users Actually Enjoy",
     description:
       "We craft fast, responsive, and intuitive user experiences using modern frameworks. Every interaction is designed to be smooth, accessible, and conversion-focused.",
-    image: "/placeholder.png",
+    image: "/images/frontend_engineering.jpg",
   },
   {
     category: "Backend & Architecture",
     title: "Robust Systems Powering Your Business",
     description:
       "Our backend solutions are secure, scalable, and built for performance. We handle data, integrations, and infrastructure so your product runs flawlessly under any load.",
-    image: "/placeholder.png",
+    image: "/images/backend_architecture.jpg",
   },
   {
     category: "AI & Automation",
     title: "Smart Systems That Work While You Sleep",
     description:
       "We build AI-powered tools, automation pipelines, and intelligent agents that reduce manual work, improve decisions, and unlock new efficiencies for your business.",
-    image: "/placeholder.png",
+    image: "/images/ai_automation.jpg",
   },
 ];
 

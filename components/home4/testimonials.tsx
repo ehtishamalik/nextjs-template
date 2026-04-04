@@ -14,35 +14,35 @@ export default function Home4Testimonial() {
         "They really nailed it. This is one of the best themes I have seen in a long time. Very nice design with lots of customization available. Many of my clients have chosen this theme for their portfolio sites.",
       reviewer: "Albert Walkers",
       profession: "SEO of Gogomedia",
-      thumb: { backgroundImage: "url(img/clients/1.jpg)" },
+      thumb: { backgroundImage: "url(/placeholder.png)" },
     },
     {
       review:
         "This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price. I&apos;m very pleased with this purchase.",
       reviewer: "Jhon Doe",
       profession: "Photographer",
-      thumb: { backgroundImage: "url(img/clients/2.jpg)" },
+      thumb: { backgroundImage: "url(/placeholder.png)" },
     },
     {
       review:
         "Had a problem with the layout after Installation- found no approach. The support reacted quickly and competently. And solved the problem between Elemetator and a WordPress update. Great!",
       reviewer: "Alex Gordon",
       profession: "Customer",
-      thumb: { backgroundImage: "url(img/clients/3.jpg)" },
+      thumb: { backgroundImage: "url(/placeholder.png)" },
     },
     {
       review:
         "I definitely recommend the theme. It works perfectly! You can import the preferred demos, while still having the ability to customize them to your needs. Very happy with Vivaco!",
       reviewer: "Luje Moss",
       profession: "Vivaco Customer",
-      thumb: { backgroundImage: "url(img/clients/4.jpg)" },
+      thumb: { backgroundImage: "url(/placeholder.png)" },
     },
     {
       review:
         "This is an excellent plugin. The developers were quick to respond to an integration issue. Solved within 24 hours.",
       reviewer: "Bobby Cox",
       profession: "Bookmify Customer",
-      thumb: { backgroundImage: "url(img/clients/5.jpg)" },
+      thumb: { backgroundImage: "url(/placeholder.png)" },
     },
   ];
   return (

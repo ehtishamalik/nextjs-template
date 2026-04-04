@@ -4,7 +4,7 @@ import type { Blog } from "@/types";
 
 const blog: Blog = {
   heading: "Mobile Development Best Practices",
-  thumbnail: "/placeholder.png",
+  thumbnail: "/images/backend_architecture.jpg",
   title:
     "Creating high-quality mobile apps requires responsive design, smooth performance, and secure, cross-platform functionality to engage users effectively.",
   highlights: [
@@ -25,7 +25,7 @@ const blog: Blog = {
   ],
   blockquote:
     "“A well-optimized mobile app not only delights users but also drives engagement, retention, and business growth.”",
-  image: { src: "/placeholder.png", alt: "Mobile Development" },
+  image: { src: "/images/mobile_app.jpg", alt: "Mobile Development" },
   tags: ["Mobile", "Development", "Best Practices"],
 };
 

@@ -62,7 +62,7 @@ export default function InfoRating() {
               <div
                 className="o_img"
                 style={{
-                  backgroundImage: "url(/placeholder.png)",
+                  backgroundImage: "url(/images/office_working.jpg)",
                 }}
               ></div>
               <div className="o_color"></div>

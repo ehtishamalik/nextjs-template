@@ -4,7 +4,6 @@ import Introduce from "@/components/home3/introduce";
 import Principles from "@/components/home3/principles";
 import Projects from "@/components/home3/projects";
 import Services from "@/components/home3/services";
-import Slider from "@/components/home3/slider";
 import Testimonial from "@/components/home3/testimonials";
 import Blog from "@/components/layout/blog";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Projects />
       <Blog />
       <Testimonial />
-      <Slider />
     </>
   );
 }

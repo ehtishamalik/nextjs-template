@@ -8,7 +8,7 @@ interface Photos {
 }
 
 // Generate photos
-function generatePhotos(folders: Folders[]) {
+export function generatePhotos(folders: Folders[]) {
   const photos: Photos[] = [];
 
   folders.forEach(({ folder, total }) => {
@@ -22,7 +22,7 @@ function generatePhotos(folders: Folders[]) {
   return photos;
 }
 
-const folders: Folders[] = [
+export const folders: Folders[] = [
   { folder: "bath-robes-towels", total: 7 },
   { folder: "bed-linen", total: 9 },
   { folder: "curtains", total: 3 },

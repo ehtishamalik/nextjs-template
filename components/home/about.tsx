@@ -86,7 +86,7 @@ export default function About() {
                     className="abs_img"
                     data-bg-img="img/about/right.jpg"
                     style={{
-                      backgroundImage: "url(https://placehold.net/600x600.png)",
+                      backgroundImage: "url(/images/digital_solutions.jpg)",
                     }}
                   ></div>
                 </div>

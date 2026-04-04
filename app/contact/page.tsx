@@ -60,7 +60,7 @@ export default function page() {
                     </div>
                     <div className="item">
                       <Link
-                        href="https://wa.me/923007331236"
+                        href="https://wa.me/923152655111?text=Hello%20Ehtisham%20Malik%2C%20I%20have%20a%20query%20regarding%20your%20services."
                         target="_blank"
                         rel="noopener noreferrer"
                         id="send_message"
@@ -87,18 +87,15 @@ export default function page() {
                         </div>
                         <div className="content_holder">
                           <ul>
-                            <li className="address">
-                              International cricket stadium Multan 60000
-                              Pakistan
-                            </li>
+                            <li className="address">Islamabad, Pakistan</li>
                             <li>
                               Phone:{" "}
-                              <a href="tel:+92616772629">+92 (616) 772629</a>
+                              <a href="tel:+923152655111">+92 (315) 2655111</a>
                             </li>
                             <li>
                               Email:{" "}
-                              <Link href="mailto:info@zahometex.com">
-                                info@zahometex.com
+                              <Link href="mailto:info@ehtishamalik.com">
+                                info@ehtishamalik.com
                               </Link>
                             </li>
                           </ul>

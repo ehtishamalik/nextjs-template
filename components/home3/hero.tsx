@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-const headerBG = "/placeholder.png";
+const headerBG = "/images/backend_architecture.jpg";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,7 @@ export default function Hero() {
               background: `url(${headerBG})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              backgroundPosition: "center center",
             }}
           ></div>
           <div className="o_color"></div>
