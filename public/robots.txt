@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://template.ehtishamalik.com
+
+# Sitemaps
+Sitemap: https://template.ehtishamalik.com/sitemap.xml
