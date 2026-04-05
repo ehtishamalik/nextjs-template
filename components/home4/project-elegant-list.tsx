@@ -27,7 +27,7 @@ export default function ProjectElegantList() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/images/e_commerce.jpg)",
+                        backgroundImage: "url(/images/e_commerce.webp)",
                       }}
                     >
                       <Link href="#"></Link>
@@ -58,7 +58,7 @@ export default function ProjectElegantList() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/images/mobile_app.jpg)",
+                        backgroundImage: "url(/images/mobile_app.webp)",
                       }}
                     >
                       <Link href="#"></Link>
@@ -87,7 +87,7 @@ export default function ProjectElegantList() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/images/analytics.jpg)",
+                        backgroundImage: "url(/images/analytics.webp)",
                       }}
                     >
                       <Link href="#"></Link>
@@ -119,7 +119,7 @@ export default function ProjectElegantList() {
                   <div
                     className="abs_img"
                     style={{
-                      backgroundImage: "url(/images/digital_solutions.jpg)",
+                      backgroundImage: "url(/images/digital_solutions.webp)",
                     }}
                   >
                     <Link href="#"></Link>
@@ -148,7 +148,7 @@ export default function ProjectElegantList() {
                   <div
                     className="abs_img"
                     style={{
-                      backgroundImage: "url(/images/mobile_app.jpg)",
+                      backgroundImage: "url(/images/mobile_app.webp)",
                     }}
                   >
                     <Link href="#"></Link>
@@ -177,7 +177,7 @@ export default function ProjectElegantList() {
                   <div
                     className="abs_img"
                     style={{
-                      backgroundImage: "url(/images/backend_architecture.jpg)",
+                      backgroundImage: "url(/images/backend_architecture.webp)",
                     }}
                   >
                     <Link href="#"></Link>
@@ -210,7 +210,7 @@ export default function ProjectElegantList() {
                       className="abs_img"
                       style={{
                         backgroundImage:
-                          "url(/images/frontend_engineering.jpg)",
+                          "url(/images/frontend_engineering.webp)",
                       }}
                     >
                       <Link href="#"></Link>
@@ -241,7 +241,7 @@ export default function ProjectElegantList() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/images/ai_automation.jpg)",
+                        backgroundImage: "url(/images/ai_automation.webp)",
                       }}
                     >
                       <Link href="#"></Link>
@@ -270,7 +270,7 @@ export default function ProjectElegantList() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/images/office_working.jpg)",
+                        backgroundImage: "url(/images/office_working.webp)",
                       }}
                     >
                       <Link href="#"></Link>

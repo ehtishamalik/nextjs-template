@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Placeholder from "@/public/images/analytics.jpg";
+import Placeholder from "@/public/images/analytics.webp";
 
 const slider3 = [
   { src: Placeholder },

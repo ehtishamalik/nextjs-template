@@ -5,7 +5,7 @@ import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { PlayVideo, Stars } from "@/public/svg/icon";
 
-const background1 = "/images/office_working.jpg";
+const background1 = "/images/office_working.webp";
 
 export default function Info() {
   const [isOpen, setIsOpen] = useState(false);

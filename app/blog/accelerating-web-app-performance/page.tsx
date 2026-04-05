@@ -4,7 +4,7 @@ import type { Blog } from "@/types";
 
 const blog: Blog = {
   heading: "Accelerating Web App Performance",
-  thumbnail: "/images/frontend_engineering.jpg",
+  thumbnail: "/images/frontend_engineering.webp",
   title:
     "Web applications must load instantly and navigate seamlessly across all devices. Optimizing performance boosts user engagement and retention.",
   highlights: [
@@ -25,7 +25,7 @@ const blog: Blog = {
   ],
   blockquote:
     "“Optimizing performance is not just a technical task, it's a business requirement that directly affects user satisfaction, revenue, and long-term brand trust.”",
-  image: { src: "/images/e_commerce.jpg", alt: "Web Performance" },
+  image: { src: "/images/e_commerce.webp", alt: "Web Performance" },
   tags: ["Web", "Performance", "Frontend"],
 };
 

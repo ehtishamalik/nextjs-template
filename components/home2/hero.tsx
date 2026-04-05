@@ -43,7 +43,7 @@ export default function Hero() {
           <div
             className="o_img"
             style={{
-              backgroundImage: "url(/images/frontend_engineering.jpg)",
+              backgroundImage: "url(/images/frontend_engineering.webp)",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center center",

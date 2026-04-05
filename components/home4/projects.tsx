@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import CounterUp from "@/components/home4/counter-up";
 
-const sixfoldGallery1 = "/images/analytics.jpg";
-const sixfoldGallery2 = "/images/ai_automation.jpg";
-const sixfoldGallery3 = "/images/backend_architecture.jpg";
-const sixfoldGallery4 = "/images/digital_solutions.jpg";
-const sixfoldGallery5 = "/images/e_commerce.jpg";
-const sixfoldGallery6 = "/images/mobile_app.jpg";
+const sixfoldGallery1 = "/images/analytics.webp";
+const sixfoldGallery2 = "/images/ai_automation.webp";
+const sixfoldGallery3 = "/images/backend_architecture.webp";
+const sixfoldGallery4 = "/images/digital_solutions.webp";
+const sixfoldGallery5 = "/images/e_commerce.webp";
+const sixfoldGallery6 = "/images/mobile_app.webp";
 
 export default function Projects() {
   return (

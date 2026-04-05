@@ -16,7 +16,7 @@ export default function PortfolioAI() {
               <div className="industify_fn_service_single">
                 <div className="img_holder">
                   <Image
-                    src="/images/ai_automation.jpg"
+                    src="/images/ai_automation.webp"
                     alt="AI & Agents"
                     width={820}
                     height={615}

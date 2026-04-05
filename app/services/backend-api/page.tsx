@@ -3,7 +3,7 @@ import ServiceSingle from "@/components/services/service-single";
 
 const data = {
   title: "Backend & API Solutions",
-  image: "/images/backend_architecture.jpg",
+  image: "/images/backend_architecture.webp",
   description: [
     "We design and develop robust backend systems that handle complex business logic while maintaining high performance, reliability, and scalability.",
     "Our APIs are built with security and efficiency in mind, enabling seamless integration between web, mobile, and third-party services.",

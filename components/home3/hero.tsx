@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-const headerBG = "/images/backend_architecture.jpg";
+const headerBG = "/images/backend_architecture.webp";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);

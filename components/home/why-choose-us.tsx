@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Certificate, Checked, Stars } from "@/public/svg/icon";
 
-const rightImage = "/images/office_working.jpg";
+const rightImage = "/images/office_working.webp";
 
 const keyAdvantages: string[] = [
   "Scalable architectures built for performance.",

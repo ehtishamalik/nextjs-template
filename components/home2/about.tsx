@@ -49,7 +49,7 @@ export default function About() {
                   <div
                     className="abs_img"
                     style={{
-                      backgroundImage: "url(/images/office_working.jpg)",
+                      backgroundImage: "url(/images/office_working.webp)",
                     }}
                   ></div>
                 </div>

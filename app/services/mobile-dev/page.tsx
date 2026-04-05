@@ -3,7 +3,7 @@ import ServiceSingle from "@/components/services/service-single";
 
 const data = {
   title: "Mobile App Development",
-  image: "/images/mobile_app.jpg",
+  image: "/images/mobile_app.webp",
   description: [
     "We develop high-performance mobile applications for iOS and Android that combine seamless functionality with intuitive and engaging user experiences.",
     "Our apps are optimized for speed, reliability, and scalability, ensuring consistent performance across a wide range of devices and network conditions.",
