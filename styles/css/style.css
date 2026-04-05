@@ -195,6 +195,10 @@ a:focus {
 /*	03) MOBILE MENU
 /*------------------------------------------------------------------*/
 .industify_fn_mobilemenu_wrap {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
   width: 100%;
   float: left;
   clear: both;
@@ -229,7 +233,9 @@ a:focus {
 }
 
 .industify_fn_mobilemenu_wrap .menu_logo a img {
-  max-width: 225px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
 .industify_fn_mobilemenu_wrap .mobilemenu {
@@ -650,6 +656,22 @@ a:focus {
   clear: both;
   border-bottom: 1px solid #eee;
   z-index: 200;
+}
+
+@media (max-width: 1040px) {
+  .desktop-header-divider {
+    display: none;
+  }
+}
+
+.mobile-header-divider {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .mobile-header-divider {
+    display: block;
+  }
 }
 
 .industify_fn_header .header_inner {

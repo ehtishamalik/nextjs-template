@@ -1,58 +1,29 @@
 "use client";
 
-import Isotope from "isotope-layout";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import { portfolio } from "@/constants";
 import { Arrow_r } from "@/public/svg/icon";
-
-// ✅ Define project type
 
 export default function PortfolioList() {
   const [isDropdown, setIsDropdown] = useState<boolean>(false);
   const [filterKey, setFilterKey] = useState<string>("");
 
-  // ✅ Proper typing for Isotope instance
-  const isotope = useRef<Isotope | null>(null);
-
   const handleClick = () => {
     setIsDropdown((prev) => !prev);
   };
 
-  // ✅ Init Isotope
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      isotope.current = new Isotope(".industify_fn_portfolio_list", {
-        itemSelector: ".gas_and_oil",
-        percentPosition: true,
-        masonry: {
-          columnWidth: ".gas_and_oil",
-        },
-      });
-    }, 500);
-
-    return () => {
-      clearTimeout(timer);
-      isotope.current?.destroy(); // ✅ cleanup
-    };
-  }, []);
-
-  // ✅ Filtering
-  useEffect(() => {
-    if (!isotope.current) return;
-
-    if (filterKey === "") {
-      isotope.current.arrange({ filter: "*" });
-    } else {
-      isotope.current.arrange({ filter: `.${filterKey}` });
-    }
-  }, [filterKey]);
-
-  // ✅ Typed handler factory
   const handleFilterKeyChange = (key: string) => () => {
     setFilterKey(key);
+    setIsDropdown(false);
   };
+
+  // ✅ Filtering (memoized for performance)
+  const filteredPortfolio = useMemo(() => {
+    if (filterKey === "") return portfolio;
+    return portfolio.filter((item) => item.category === filterKey);
+  }, [filterKey]);
 
   return (
     <div className="industify_fn_portfolio_page">
@@ -60,14 +31,14 @@ export default function PortfolioList() {
         <div className="container">
           <div className="filter">
             <button type="button" onClick={handleClick}>
-              All Projects
+              {filterKey === ""
+                ? "All Projects"
+                : filterKey.charAt(0).toUpperCase() + filterKey.slice(1)}
             </button>
+
             <span className="spinner"></span>
-            {/* biome-ignore lint/a11y/useKeyWithClickEvents: To Be Corrected */}
-            <ul
-              className={isDropdown ? "fn_filter opened" : "fn_filter"}
-              onClick={handleClick}
-            >
+
+            <ul className={isDropdown ? "fn_filter opened" : "fn_filter"}>
               <li className={filterKey === "" ? "active" : ""}>
                 <button
                   type="button"
@@ -99,11 +70,8 @@ export default function PortfolioList() {
 
           <div className="list_in">
             <ul className="industify_fn_portfolio_list">
-              {portfolio.map((project) => (
-                <li
-                  className={`gas_and_oil ${project.category}`}
-                  key={project.id}
-                >
+              {filteredPortfolio.map((project) => (
+                <li className={project.category} key={project.id}>
                   <div className="item">
                     <div className="item_in">
                       <Link href={project.link} />
@@ -134,6 +102,19 @@ export default function PortfolioList() {
                   </div>
                 </li>
               ))}
+
+              {/* ✅ Optional: Empty state */}
+              {filteredPortfolio.length === 0 && (
+                <li>
+                  <div className="item">
+                    <div className="item_in">
+                      <div className="title_holder">
+                        <h3>No projects found</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              )}
             </ul>
           </div>
         </div>
