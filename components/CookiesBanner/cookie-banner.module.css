@@ -1,0 +1,169 @@
+/* ─── Variables ────────────────────────────────────────────────────────────── */
+
+:root {
+  --banner-bg: rgba(15, 15, 20, 0.85);
+  --banner-border: rgba(255, 255, 255, 0.08);
+  --banner-radius: 16px;
+  --banner-blur: 20px;
+
+  --text-primary: #f0f0f0;
+  --text-muted: #a0a0b0;
+  --link-color: #818cf8;
+
+  --btn-accept-bg: #818cf8;
+  --btn-accept-hover: #6366f1;
+  --btn-accept-text: #fff;
+
+  --btn-decline-border: rgba(255, 255, 255, 0.18);
+  --btn-decline-text: #a0a0b0;
+  --btn-decline-hover-bg: rgba(255, 255, 255, 0.06);
+
+  --transition-speed: 0.2s;
+}
+
+/* ─── Keyframes ─────────────────────────────────────────────────────────────── */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ─── Banner ─────────────────────────────────────────────────────────────────── */
+
+.banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 780px;
+  z-index: 1000;
+
+  background: var(--banner-bg);
+  border: 1px solid var(--banner-border);
+  border-radius: var(--banner-radius);
+  backdrop-filter: blur(var(--banner-blur));
+  -webkit-backdrop-filter: blur(var(--banner-blur));
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  font-family: "DM Sans", system-ui, sans-serif;
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ─── Inner Layout ───────────────────────────────────────────────────────────── */
+
+.banner__inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+/* ─── Icon ───────────────────────────────────────────────────────────────────── */
+
+.banner__icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* ─── Text ───────────────────────────────────────────────────────────────────── */
+
+.banner__text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* ─── Link ───────────────────────────────────────────────────────────────────── */
+
+.banner__link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.banner__link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+/* ─── Actions ────────────────────────────────────────────────────────────────── */
+
+.banner__actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ─── Buttons ────────────────────────────────────────────────────────────────── */
+
+.banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  border: none;
+  transition:
+    background var(--transition-speed) ease,
+    opacity var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
+}
+
+.banner__btn:active {
+  transform: scale(0.97);
+}
+
+/* Accept variant */
+.banner__btn--accept {
+  background: var(--btn-accept-bg);
+  color: var(--btn-accept-text);
+}
+
+.banner__btn--accept:hover {
+  background: var(--btn-accept-hover);
+}
+
+/* Decline variant */
+.banner__btn--decline {
+  background: transparent;
+  color: var(--btn-decline-text);
+  border: 1px solid var(--btn-decline-border);
+}
+
+.banner__btn--decline:hover {
+  background: var(--btn-decline-hover-bg);
+  color: var(--text-primary);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .banner__inner {
+    flex-wrap: wrap;
+  }
+
+  .banner__actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

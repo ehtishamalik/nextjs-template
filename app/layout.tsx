@@ -1,10 +1,6 @@
 import "./globals.css";
 import "swiper/swiper.css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
 import "../node_modules/react-modal-video/css/modal-video.css";
-// import "metismenujs/dist/metismenujs.css";
 import "@/styles/css/base.css";
 import "@/styles/css/custom.css";
 import "@/styles/css/fontawesome-all.min.css";
@@ -13,16 +9,13 @@ import "@/styles/css/justified.css";
 import "@/styles/css/magnific-popup.css";
 import "@/styles/css/nice-select.css";
 import "@/styles/css/style.css";
-// import "@/styles/css/swiper.css";
-
-import DesktopHeader from "@/components/layout/desktop-header";
-import Footer from "@/components/layout/footer";
-import MobileHeader from "@/components/layout/mobile-header";
-
-// import CookieBanner from "../components/cookies-banner";
 
 import type { Metadata } from "next";
 import { Open_Sans, Rubik } from "next/font/google";
+import CookiesBanner from "@/components/CookiesBanner";
+import DesktopHeader from "@/components/layout/desktop-header";
+import Footer from "@/components/layout/footer";
+import MobileHeader from "@/components/layout/mobile-header";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -58,6 +51,7 @@ export default function RootLayout({
             <MobileHeader />
             {children}
             <Footer />
+            <CookiesBanner />
           </div>
         </div>
       </body>
